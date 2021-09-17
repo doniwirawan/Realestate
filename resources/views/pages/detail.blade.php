@@ -8,8 +8,6 @@
 
 @foreach ($single as $item)
 
-
-<!--/ Intro Single star /-->
 <section class="intro-single">
     <div class="container">
         <div class="row">
@@ -122,6 +120,7 @@
                       <span>1</span>
                     </li> --}}
                                 </ul>
+                                <a href="http://" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-success h3 "><i class="fa fa-whatsapp pr-2"></i>Buy</a>
                             </div>
                         </div>
                     </div>
@@ -137,12 +136,12 @@
                             <p class="description color-text-a">
                                 {{$item->desc}}
                             </p>
-                            <p class="description color-text-a no-margin">
+                            {{-- <p class="description color-text-a no-margin">
                                 Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo
                                 eget
                                 malesuada. Quisque velit nisi,
                                 pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
-                            </p>
+                            </p> --}}
                         </div>
                         {{-- <div class="row section-t3">
                             <div class="col-sm-12">

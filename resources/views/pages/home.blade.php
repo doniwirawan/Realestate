@@ -194,6 +194,8 @@ Home
                                         <h4 class="card-info-title">Garages</h4>
                                         <span>1</span>
                                     </li> --}}
+
+                                    <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20{{$item->name}}" target="_blank" rel="noopener noreferrer" class="btn bg-white text-success"><i class="fa fa-whatsapp mr-2"></i>Buy</a>
                                 </ul>
                             </div>
                         </div>
