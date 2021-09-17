@@ -5,7 +5,7 @@
 
             // create map function
             function createMap(elemId, centerLat, centerLng, zoom) {
-                let map = new L.Map(elemId , { zoomControl: false });
+                let map = new L.Map(elemId , { zoomControl: false }).fitWorld();
 
                 // Data provider
                 const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';

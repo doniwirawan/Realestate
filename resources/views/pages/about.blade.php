@@ -10,7 +10,7 @@ About
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="title-single-box">
-                    <h1 class="title-single">We Do Great Design For Creative Folks</h1>
+                    <h1 class="title-single">We serve you the Best Properties in Bali</h1>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">
@@ -41,7 +41,7 @@ About
                 <div class="sinse-box">
                     <h3 class="sinse-title">Soli Real Estate
                         <span></span>
-                        <br> Since 2017</h3>
+                        {{-- <br> Since 2017</h3> --}}
                     {{-- <p>Art & Creative</p> --}}
                 </div>
             </div>

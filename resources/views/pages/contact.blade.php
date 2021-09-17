@@ -37,7 +37,7 @@ Contact
 <section class="contact">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            {{-- <div class="col-sm-12">
                 <div class="contact-map box">
                     <div id="map" class="contact-map">
                         <iframe
@@ -45,7 +45,7 @@ Contact
                             width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-sm-12 section-t8">
                 <div class="row">
                     <div class="col-md-5 section-md-t3">
