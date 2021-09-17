@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('title')
-Detail
+@foreach ($single as $item)
+    {{$item->name}}
+@endforeach
 @endsection
 @section('content')
 
@@ -83,10 +85,13 @@ Detail
                       <strong>Location:</strong>
                       <span>Chicago, IL 606543</span>
                     </li> --}}
-                                    <li class="d-flex justify-content-between">
+                                    @if ($item->type)
+                                        <li class="d-flex justify-content-between">
                                         <strong>Property Type:</strong>
                                         <span>{{$item->type}}</span>
-                                    </li>
+                                      </li>
+                                    @endif
+                                    
                                     <li class="d-flex justify-content-between">
                                         <strong>Status:</strong>
                                         <span>{{$item->status}}</span>
