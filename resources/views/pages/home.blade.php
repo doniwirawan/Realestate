@@ -20,7 +20,7 @@ Home
                                     <h1 class="intro-title mb-4">
                                         <span class="color-b">{{$item->name}}</h1>
                                     <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">{{$item->status}} | IDR {{$item->price_usd}}</span></a>
+                                        <a href="#"><span class="price-a">{{$item->status}} | IDR @money($item->price_usd)</span></a>
                                     </p>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@ Home
                             </div>
                             <div class="card-body-a">
                                 <div class="price-box d-flex">
-                                    <span class="price-a">{{$item->status}} | IDR {{$item->price_usd}}</span>
+                                    <span class="price-a">{{$item->status}} | IDR @money($item->price_usd)</span>
                                 </div>
                                 {{-- <a href="#" class="link-a">Click here to view
                                     <span class="ion-ios-arrow-forward"></span>
@@ -177,12 +177,18 @@ Home
                                         </span>
                                     </li>
                                     <li>
-                                         <h4 class="card-info-title">Beds</h4>
+                                        @if ($item->beds)
+                                             <h4 class="card-info-title">Beds</h4>
                                         <span>{{$item->beds}}</span>
+                                        @endif
+                                       
                                     </li>
                                     <li>
-                                        <h4 class="card-info-title">Baths</h4>
+                                        @if ($item->baths)
+                                             <h4 class="card-info-title">Baths</h4>
                                         <span>{{$item->baths}}</span>
+                                        @endif
+                                       
                                     </li>
                                     {{-- <li>
                                         <h4 class="card-info-title">Garages</h4>

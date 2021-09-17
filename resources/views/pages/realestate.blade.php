@@ -64,7 +64,7 @@ Real Estate
                             </div>
                             <div class="card-body-a">
                                 <div class="price-box d-flex">
-                                    <span class="price-a">{{$item->status}} | IDR {{$item->price_usd}}</span>
+                                    <span class="price-a">{{$item->status}} | IDR @money($item->price_usd)</span>
                                 </div>
                                 {{-- <a href="property-single.html" class="link-a">Click here to view
                                     <span class="ion-ios-arrow-forward"></span> --}}
@@ -79,12 +79,18 @@ Real Estate
                                         </span>
                                     </li>
                                     <li>
-                                        <h4 class="card-info-title">Beds</h4>
+                                        @if ($item->beds)
+                                             <h4 class="card-info-title">Beds</h4>
                                         <span>{{$item->beds}}</span>
+                                        @endif
+                                       
                                     </li>
                                     <li>
-                                        <h4 class="card-info-title">Baths</h4>
+                                        @if ($item->baths)
+                                             <h4 class="card-info-title">Baths</h4>
                                         <span>{{$item->baths}}</span>
+                                        @endif
+                                       
                                     </li>
                                     {{-- <li>
                                         <h4 class="card-info-title">Garages</h4>
