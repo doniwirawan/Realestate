@@ -37,7 +37,7 @@
             }
 
             // add pin point and pop up
-            function addPopUp(map, latLng, link, name, desc, price, size) {
+            function addPopUp(map, latLng, link, name, desc, price, size, type, status) {
 
                 let marker = L.marker(latLng).addTo(map);
                 marker.bindPopup(
@@ -49,6 +49,8 @@
                     <h5 class="card-title font-weight-bold">${name}</h5>
                     <h6 class="text-warning pt-1"><i class="fas fa-money-bill-alt"></i> IDR ${currency(price)}</h6>
                     </div>
+                    <small class="bg-secondary p-1 rounded text-light">${type}</small>
+                    <small class="bg-dark p-1 rounded text-light">${status}</small>
 
                     <div class="feature d-flex  border-bottom">
                         <p><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>
@@ -72,7 +74,7 @@
                 const price = Number(latLng.price_usd)
 
                 // adding pop up and pin point
-                addPopUp(map, pointArray, latLng.img, latLng.name, latLng.desc, latLng.price_usd, latLng.size);
+                addPopUp(map, pointArray, latLng.img, latLng.name, latLng.desc, latLng.price_usd, latLng.size, latLng.type, latLng.status);
 
             });
 

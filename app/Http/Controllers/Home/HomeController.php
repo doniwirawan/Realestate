@@ -22,7 +22,7 @@ class HomeController extends Controller
 
     public function realestate()
     {
-        $realestate = DB::table('realestate')->paginate(3);
+        $realestate = DB::table('realestate')->paginate(12);
 
         return view('pages.realestate')->with(['realestate' => $realestate]);
     }
