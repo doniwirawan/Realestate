@@ -66,8 +66,8 @@ Real Estate
                                 <div class="price-box d-flex">
                                     <span class="price-a">{{$item->status}} | IDR @money($item->price_usd)</span>
                                 </div>
-                                {{-- <a href="property-single.html" class="link-a">Click here to view
-                                    <span class="ion-ios-arrow-forward"></span> --}}
+                                <a href="property-single.html" class="link-a">Click here to view
+                                    <span class="ion-ios-arrow-forward"></span>
                                 </a>
                             </div>
                             <div class="card-footer-a">

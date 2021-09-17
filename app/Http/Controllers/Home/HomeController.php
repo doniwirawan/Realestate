@@ -27,24 +27,18 @@ class HomeController extends Controller
         return view('pages.realestate')->with(['realestate' => $realestate]);
     }
 
+    public function single($slug)
+    {
+        $single = DB::table('realestate')->where('slug', $slug)->get();
+
+        return view('pages.detail')->with(['single' => $single]);
+    }
+
     public function contact()
     {
 
         return view('pages.contact');
     }
-
-    public function contactForm(Request $request)
-    {
-
-        $name = $request->name;
-        $email = $request->email;
-        $subject = $request->subject;
-        $message = $request->message;
-
-        
-
-    }
-
 
     public function maps()
     {

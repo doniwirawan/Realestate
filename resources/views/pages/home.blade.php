@@ -68,10 +68,10 @@ Home
                         </p>
                     </div>
                     {{-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> --}}
+                        <a href="#" class="link-c link-icon">Read more
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-md-4">
@@ -164,9 +164,9 @@ Home
                                 <div class="price-box d-flex">
                                     <span class="price-a">{{$item->status}} | IDR @money($item->price_usd)</span>
                                 </div>
-                                {{-- <a href="#" class="link-a">Click here to view
+                                <a href="#" class="link-a">Click here to view
                                     <span class="ion-ios-arrow-forward"></span>
-                                </a> --}}
+                                </a>
                             </div>
                             <div class="card-footer-a">
                                 <ul class="card-info d-flex justify-content-around">

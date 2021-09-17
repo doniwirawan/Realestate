@@ -23,8 +23,8 @@ Route::get('/about',[HomeController::class, 'about'])->name('about');
 
 Route::get('/realestate',[HomeController::class, 'realestate'])->name('realestate');
 
-Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
+Route::get('/realestate/{slug}',[HomeController::class, 'single'])->name('realestateDetail');
 
-Route::post('/contact/store',[HomeController::class, 'contactForm'])->name('contactForm');
+Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
 Route::get('/maps',[HomeController::class, 'maps'])->name('maps');
