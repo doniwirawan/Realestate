@@ -37,3 +37,13 @@ Auth::routes();
 
 // admin here
 Route::get('/admin', [AdminController::class, 'admin'])->name('adminDashboard');
+
+Route::get('/input', [AdminController::class, 'input'])->name('inputDashboard');
+
+Route::post('/add', [AdminController::class, 'add'])->name('add');
+
+Route::post('/update', [AdminController::class, 'update'])->name('update');
+
+Route::get('/realestate/edit/{id}', [AdminController::class, 'edit'])->name('edit');
+
+Route::get('/realestate/delete/{id}', [AdminController::class, 'delete'])->name('delete');
