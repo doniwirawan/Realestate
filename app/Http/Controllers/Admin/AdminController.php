@@ -57,18 +57,33 @@ class AdminController extends Controller
     public function update(Request $request)
     {
 
+        if ($request->file('file')) {
+            $filex = $request->file('file');
 
-        $filex = $request->file('file');
+            $imageName = $filex->getClientOriginalName();
 
-        $imageName = $filex->getClientOriginalName();
+            $filex->move(public_path('img'), $imageName);
 
-        $filex->move(public_path('img'), $imageName);
+            DB::table('realestate')->where('id', $request->id)->update([
+                'img' => $imageName,
+                'name' => $request->name,
+                'slug' => Str::slug($request->name),
+                'type' => $request->type,
+                'desc' => $request->desc,
+                'size' => $request->size,
+                'location' => $request->location,
+                'price_usd' => $request->price_usd,
+                'beds' => $request->beds,
+                'baths' => $request->baths,
+                'pools' => $request->pools,
+            ]);
 
-        DB::table('realestate')->where('id', $request->id)->update([
+        }else{
+
+            DB::table('realestate')->where('id', $request->id)->update([
             'name' => $request->name,
             'slug' => Str::slug($request->name),
             'type' => $request->type,
-            'img' => $imageName,
             'desc' => $request->desc,
             'size' => $request->size,
             'location' => $request->location,
@@ -76,38 +91,54 @@ class AdminController extends Controller
             'beds' => $request->beds,
             'baths' => $request->baths,
             'pools' => $request->pools,
-        ]);
+           ]);
+
+        }
 
         return redirect('/admin');
     }
 
     public function add(Request $request)
     {
-        // ini lama
-        $file = $request->file('file');
+        if($request->file('file')){
 
-        $imageName = $file->getClientOriginalName();
+            $file = $request->file('file');
 
-        $file->move(public_path('img'), $imageName);
+            $imageName = $file->getClientOriginalName();
 
-        DB::table('realestate')->insert([
-            'name' => $request->name,
-            'slug' => Str::slug($request->name),
-            'type' => $request->type,
-            'img' => $imageName,
-            'desc' => $request->desc,
-            'size' => $request->size,
-            'location' => $request->location,
-            'price_usd' => $request->price_usd,
-            'beds' => $request->beds,
-            'baths' => $request->baths,
-            'pools' => $request->pools,
+            $file->move(public_path('img'), $imageName);
 
-        ]);
+            DB::table('realestate')->insert([
+                'img' => $imageName,
+                'name' => $request->name,
+                'slug' => Str::slug($request->name),
+                'type' => $request->type,
+                'desc' => $request->desc,
+                'size' => $request->size,
+                'location' => $request->location,
+                'price_usd' => $request->price_usd,
+                'beds' => $request->beds,
+                'baths' => $request->baths,
+                'pools' => $request->pools,
+            ]);
 
+        }else{
+
+            DB::table('realestate')->insert([
+                'name' => $request->name,
+                'slug' => Str::slug($request->name),
+                'type' => $request->type,
+                'desc' => $request->desc,
+                'size' => $request->size,
+                'location' => $request->location,
+                'price_usd' => $request->price_usd,
+                'beds' => $request->beds,
+                'baths' => $request->baths,
+                'pools' => $request->pools,
+
+            ]);
+        }
 
         return redirect('/admin');
     }
-
-     
 }
