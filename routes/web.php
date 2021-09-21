@@ -26,7 +26,7 @@ Route::get('/realestate',[HomeController::class, 'realestate'])->name('realestat
 
 Route::get('/realestate/{slug}',[HomeController::class, 'single'])->name('realestateDetail');
 
-Route::get('/realestate/search',[HomeController::class, 'search'])->name('realestateSearch');
+Route::get('/search',[HomeController::class, 'search'])->name('realestateSearch');
 
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 

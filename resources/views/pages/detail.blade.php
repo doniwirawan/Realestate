@@ -44,17 +44,14 @@
             <div class="col-sm-12">
                 <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
                     <div class="carousel-item-b">
-                        <img src="storage/img/{{url($item->img)}}" alt="">
+                        <img src="/storage/img/{{$item->img}}" alt="" class="rounded">
                     </div>
-                    {{-- <div class="carousel-item-b">
-              <img src="frontend/img/slide-3.jpg" alt="">
-            </div>
-            <div class="carousel-item-b">
-              <img src="frontend/img/slide-1.jpg" alt="">
-            </div> --}}
+                   
                 </div>
                 <div class="row justify-content-between">
                     <div class="col-md-5 col-lg-4">
+
+
                         <div class="property-price d-flex justify-content-center foo">
                             <div class="card-header-c d-flex">
                                 <div class="card-box-ico">
@@ -89,11 +86,14 @@
                                         <span>{{$item->type}}</span>
                                       </li>
                                     @endif
-                                    
+
+                                    @if ($item->status)
                                     <li class="d-flex justify-content-between">
                                         <strong>Status:</strong>
                                         <span>{{$item->status}}</span>
                                     </li>
+                                    @endif
+
                                     <li class="d-flex justify-content-between">
                                         <strong>Area:</strong>
                                         <span>{{$item->size}}m
@@ -135,7 +135,9 @@
                         <div class="property-description">
                             <p class="description color-text-a">
                                 {{$item->desc}}
+                                
                             </p>
+
                             {{-- <p class="description color-text-a no-margin">
                                 Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo
                                 eget

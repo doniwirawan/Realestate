@@ -5,13 +5,13 @@
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <div class="box-collapse-wrap form">
-      <form action="/realestate/search"  method="GET"  class="form-a">
-        @csrf
+      <form action="{{url('/search')}}"  method="GET"  class="form-a">
+        {{ @csrf_field() }}
         <div class="row">
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="Type">Keyword</label>
-              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword" name="keyword"  value="{{ old('keyword') }}">
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword" name="name"  value="">
             </div>
           </div>
           {{-- <div class="col-md-12 mb-2">

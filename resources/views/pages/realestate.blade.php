@@ -34,17 +34,7 @@ Real Estate
 <!--/ Property Grid Star /-->
 <section class="property-grid grid">
     <div class="container">
-        <form method="GET" action="/realestate/search" class="mt-4">
-            {{-- @csrf --}}
-                <div class="form-group d-flex">
-                    <label for="keyword"></label>
-                    <input type="text" class="form-control mr-2" id="keyword" name="keyword" placeholder="Search..." >
-
-                    <button class="btn btn-success" type="submit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </form>
+        
         <div class="row">
             <div class="col-sm-12">
                 <div class="grid-option">
