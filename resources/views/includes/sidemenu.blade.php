@@ -5,18 +5,19 @@
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <div class="box-collapse-wrap form">
-      <form class="form-a">
+      <form action="/realestate/search"  method="GET"  class="form-a">
+        @csrf
         <div class="row">
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="Type">Keyword</label>
-              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword" name="keyword"  value="{{ old('keyword') }}">
             </div>
           </div>
-          <div class="col-md-12 mb-2">
+          {{-- <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="Type">Type</label>
-              <select class="form-control form-control-lg form-control-a" id="Type">
+              <select class="form-control form-control-lg form-control-a" id="Type" name="type">
                 <option>Land</option>
                 <option>Hotel</option>
                 <option>Villa</option>
@@ -26,7 +27,7 @@
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="price">Max Price</label>
-              <select class="form-control form-control-lg form-control-a" id="price">
+              <select class="form-control form-control-lg form-control-a" id="price" name="price">
                 <option>Unlimite</option>
                 <option>500,000,000.00</option>
                 <option>1,000,000,000.00</option>
@@ -36,9 +37,9 @@
                 <option>100,000,000,000.00</option>
               </select>
             </div>
-          </div>
+          </div> --}}
           <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Search Property</button>
+            <button type="submit" class="btn btn-b" >Search Property</button>
           </div>
         </div>
       </form>

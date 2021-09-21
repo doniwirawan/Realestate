@@ -12,7 +12,12 @@ class HomeController extends Controller
     {
         $realestate = DB::table('realestate')->orderBy('id', 'desc')->take(5)->get();
 
-        return view('pages.home')->with(['realestate' => $realestate]);
+        $realestate2 = DB::table('realestate')->paginate(12);
+
+        return view('pages.home')->with([
+            'realestate' => $realestate, 
+            'realestate2' => $realestate2
+        ]);
     }
 
     public function about()
@@ -45,5 +50,15 @@ class HomeController extends Controller
         $realestate = DB::table('realestate')->get();
 
         return view('pages.maps')->with(['realestate' => $realestate]);
+    }
+
+    public function search(Request $request)
+    {
+        $searchQuery = $request->keyword;
+
+        $realestate = DB::table('realestate')->where('name', 'like',"%".$searchQuery."%")->paginate(12);
+
+        return view('pages.realestate')->with(['realestate' => $realestate]);
+        // return response()->json(['realestate' => $realestate]);
     }
 }
