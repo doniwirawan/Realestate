@@ -68,7 +68,6 @@ class AdminController extends Controller
                 'img' => $imageName,
                 'name' => $request->name,
                 'slug' => Str::slug($request->name),
-                'type' => $request->type,
                 'desc' => $request->desc,
                 'size' => $request->size,
                 'location' => $request->location,
@@ -76,6 +75,8 @@ class AdminController extends Controller
                 'beds' => $request->beds,
                 'baths' => $request->baths,
                 'pools' => $request->pools,
+                'status' => $request->status,
+                'type' => $request->typeku,
             ]);
 
         }else{
@@ -83,7 +84,6 @@ class AdminController extends Controller
             DB::table('realestate')->where('id', $request->id)->update([
             'name' => $request->name,
             'slug' => Str::slug($request->name),
-            'type' => $request->type,
             'desc' => $request->desc,
             'size' => $request->size,
             'location' => $request->location,
@@ -91,6 +91,9 @@ class AdminController extends Controller
             'beds' => $request->beds,
             'baths' => $request->baths,
             'pools' => $request->pools,
+            'status' => $request->status,
+            'type' => $request->typeku,
+            
            ]);
 
         }
@@ -120,6 +123,7 @@ class AdminController extends Controller
                 'beds' => $request->beds,
                 'baths' => $request->baths,
                 'pools' => $request->pools,
+                'status' => $request->status,
             ]);
 
         }else{
@@ -135,6 +139,7 @@ class AdminController extends Controller
                 'beds' => $request->beds,
                 'baths' => $request->baths,
                 'pools' => $request->pools,
+                'status' => $request->status,
 
             ]);
         }

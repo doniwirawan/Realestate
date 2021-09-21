@@ -19,9 +19,19 @@
         <div class="form-group">
             <label for="exampleFormControlSelect1">Type</label>
             <select class="form-control" id="exampleFormControlSelect1" name="type">
+                 <option value="" selected disabled hidden>Choose here</option>
                 <option value="Land">Land</option>
                 <option value="Villa">Villa</option>
                 <option value="Hotel">Hotel</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Status</label>
+            <select class="form-control" id="exampleFormControlSelect2" name="status">
+                 <option value="" selected disabled hidden>Choose here</option>
+                <option value="freehold">Freehold</option>
+                <option value="leasehold">Leasehold</option>
             </select>
         </div>
 

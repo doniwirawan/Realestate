@@ -19,6 +19,25 @@
             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file" value="./storage/img/{{$realestate->img}}" multiple>
         </div>
 
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Type</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="typeku" value="{{$realestate->type}}">
+                 <option value="" selected disabled hidden>Choose here</option>
+                <option value="hotel">Hotel</option>
+                <option value="land">Land</option>
+                <option value="villa">Villa</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Status</label>
+            <select class="form-control" id="exampleFormControlSelect2" name="status" value="{{$realestate->status}}">
+                 <option value="" selected disabled hidden>Choose here</option>
+                <option value="freehold">Freehold</option>
+                <option value="leasehold">Leasehold</option>
+            </select>
+        </div>
+
         <input type="text" class="form-control" name="id" id="id" placeholder="realestate name here" value="{{$realestate->id}}" hidden>
 
         <label for="feature">Surface</label>
