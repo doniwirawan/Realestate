@@ -35,6 +35,16 @@
         <label for="feature">Surface Area</label>
         <input type="text" class="form-control" name="surface" placeholder="in SQM" id="feature">
 
+         <label for="beds">Beds</label>
+        <input type="text" class="form-control" name="beds" id="beds" placeholder="1">
+
+        <label for="baths">Baths</label>
+        <input type="text" class="form-control" name="baths" id="baths" placeholder="1">
+
+        <label for="pools">Pools</label>
+        <input type="text" class="form-control" name="pools" id="pools" placeholder="1">
+      
+
         <label for="location_1">Location</label>
         <input type="text" class="form-control" name="location" placeholder="-8.5947,115.1974" id="location_1">
 

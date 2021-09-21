@@ -24,6 +24,16 @@
         <label for="feature">Surface</label>
         <input type="text" class="form-control" name="surface" id="feature" value="{{$realestate->size}}">
 
+        <label for="beds">Beds</label>
+        <input type="text" class="form-control" name="beds" id="beds" value="{{$realestate->beds}}">
+
+        <label for="baths">Baths</label>
+        <input type="text" class="form-control" name="baths" id="baths" value="{{$realestate->baths}}">
+
+        <label for="pools">Pools</label>
+        <input type="text" class="form-control" name="pools" id="pools" value="{{$realestate->pools}}">
+      
+
 
 
         <div class="form-group">
