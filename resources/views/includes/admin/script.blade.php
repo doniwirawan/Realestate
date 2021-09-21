@@ -40,4 +40,4 @@
 
 
         <!-- custom js -->
-        <script src="./js/admin_script.js"></script>
+        <script src="./admin/js/script.js"></script>
