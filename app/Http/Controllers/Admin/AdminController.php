@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 
 class AdminController extends Controller
@@ -69,12 +70,12 @@ class AdminController extends Controller
             'type' => $request->type,
             'img' => $imageName,
             'desc' => $request->desc,
-            'size' => $request->surface,
+            'size' => $request->size,
             'location' => $request->location,
             'price_usd' => $request->price_usd,
-            'beds' => $request->location,
-            'baths' => $request->price_usd,
-            'pools' => $request->price_usd,
+            'beds' => $request->beds,
+            'baths' => $request->baths,
+            'pools' => $request->pools,
         ]);
 
         return redirect('/admin');
@@ -95,12 +96,12 @@ class AdminController extends Controller
             'type' => $request->type,
             'img' => $imageName,
             'desc' => $request->desc,
-            'size' => $request->surface,
+            'size' => $request->size,
             'location' => $request->location,
             'price_usd' => $request->price_usd,
-            'beds' => $request->location,
-            'baths' => $request->price_usd,
-            'pools' => $request->price_usd,
+            'beds' => $request->beds,
+            'baths' => $request->baths,
+            'pools' => $request->pools,
 
         ]);
 

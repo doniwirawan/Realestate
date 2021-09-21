@@ -33,7 +33,7 @@
         </div>
 
         <label for="feature">Surface Area</label>
-        <input type="text" class="form-control" name="surface" placeholder="in SQM" id="feature">
+        <input type="number" class="form-control" name="size" placeholder="in SQM" id="feature">
 
          <label for="beds">Beds</label>
         <input type="text" class="form-control" name="beds" id="beds" placeholder="1">

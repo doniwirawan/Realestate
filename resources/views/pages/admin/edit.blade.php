@@ -22,7 +22,7 @@
         <input type="text" class="form-control" name="id" id="id" placeholder="realestate name here" value="{{$realestate->id}}" hidden>
 
         <label for="feature">Surface</label>
-        <input type="text" class="form-control" name="surface" id="feature" value="{{$realestate->size}}">
+        <input type="text" class="form-control" name="size" id="feature" value="{{$realestate->size}}">
 
         <label for="beds">Beds</label>
         <input type="text" class="form-control" name="beds" id="beds" value="{{$realestate->beds}}">
