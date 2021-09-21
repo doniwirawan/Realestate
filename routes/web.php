@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +31,9 @@ Route::get('/realestate/search',[HomeController::class, 'search'])->name('reales
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
 Route::get('/maps',[HomeController::class, 'maps'])->name('maps');
+
+
+Auth::routes();
+
+// admin here
+Route::get('/admin', [AdminController::class, 'admin'])->name('adminDashboard');

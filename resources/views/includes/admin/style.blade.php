@@ -16,5 +16,5 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="./admin/css/style.css">
+    <link rel="stylesheet" href="./backend/css/style.css">
     {{-- @yield('css') --}}
