@@ -16,7 +16,7 @@
 
         <div class="form-group mt-2">
             <label for="exampleFormControlFile1">Images</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file" value="./img/{{$realestate->img}}" multiple>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file" value="./storage/img/{{$realestate->img}}" multiple>
         </div>
 
         <input type="text" class="form-control" name="id" id="id" placeholder="realestate name here" value="{{$realestate->id}}" hidden>

@@ -44,7 +44,7 @@
             <div class="col-sm-12">
                 <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
                     <div class="carousel-item-b">
-                        <img src="{{url($item->img)}}" alt="">
+                        <img src="storage/img/{{url($item->img)}}" alt="">
                     </div>
                     {{-- <div class="carousel-item-b">
               <img src="frontend/img/slide-3.jpg" alt="">

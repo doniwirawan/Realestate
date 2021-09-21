@@ -9,7 +9,7 @@ Home
     <div id="carousel" class="owl-carousel owl-theme">
 
       @foreach ($realestate as $item)
-          <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/{{$item->img}})">
+          <div class="carousel-item-a intro-item bg-image" style="background-image: url(storage/img/{{$item->img}})">
             <div class="overlay overlay-a"></div>
             <div class="intro-content display-table">
                 <div class="table-cell">
@@ -151,7 +151,7 @@ Home
             <div class="carousel-item-b">
                 <div class="card-box-a card-shadow">
                     <div class="img-box-a">
-                        <img src="img/{{$item->img}}" alt="" class="img-a img-fluid">
+                        <img src="storage/img/{{$item->img}}" alt="" class="img-a img-fluid">
                     </div>
                     <div class="card-overlay">
                         <div class="card-overlay-a-content">

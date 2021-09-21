@@ -62,7 +62,7 @@ class AdminController extends Controller
 
             $imageName = $filex->getClientOriginalName();
 
-            $filex->move(public_path('img'), $imageName);
+            $filex->move(public_path('storage/img'), $imageName);
 
             DB::table('realestate')->where('id', $request->id)->update([
                 'img' => $imageName,
@@ -106,7 +106,7 @@ class AdminController extends Controller
 
             $imageName = $file->getClientOriginalName();
 
-            $file->move(public_path('img'), $imageName);
+            $file->move(public_path('storage/img'), $imageName);
 
             DB::table('realestate')->insert([
                 'img' => $imageName,
