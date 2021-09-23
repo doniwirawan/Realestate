@@ -524,7 +524,7 @@ a:hover {
   padding-bottom: 28px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
+  box-shadow: 1px 2px 15px rgba(243, 147, 147, 0.3);
 }
 
 .navbar-default .nav-search {
@@ -994,6 +994,9 @@ a:hover {
 .card-box-b .img-a,
 .card-box-b .img-b {
   transition: .8s all ease-in-out;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-overlay {
