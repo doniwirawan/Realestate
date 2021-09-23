@@ -29,6 +29,10 @@
             </select>
         </div>
 
+        
+        <label for="area">Area</label>
+        <input type="text" class="form-control" name="area" placeholder="Ubud" id="area" value="{{$realestate->area}}">
+
         <div class="form-group">
             <label for="exampleFormControlSelect2">Status</label>
             <select class="form-control" id="exampleFormControlSelect2" name="status" value="{{$realestate->status}}">
@@ -51,18 +55,7 @@
 
         <label for="pools">Pools</label>
         <input type="text" class="form-control" name="pools" id="pools" value="{{$realestate->pools}}">
-      
-
-
-
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Type</label>
-            <select class="form-control" id="exampleFormControlSelect1" name="type">
-                <option value="Land">Land</option>
-                <option value="Villa">Villa</option>
-                <option value="Hotel">Hotel</option>
-            </select>
-        </div>
+        
 
         <div class="form-group">
             <label for="description">Description </label>

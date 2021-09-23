@@ -12,11 +12,17 @@ class HomeController extends Controller
     {
         $realestate = DB::table('realestate')->orderBy('id', 'desc')->take(5)->get();
 
-        $realestate2 = DB::table('realestate')->paginate(12);
+        $villas = DB::table('realestate')->where('type', 'villa')->paginate(12);
+
+        $hotels = DB::table('realestate')->where('type', 'hotel')->paginate(12);
+
+        $lands = DB::table('realestate')->where('type', 'land')->paginate(12);
 
         return view('pages.home')->with([
             'realestate' => $realestate, 
-            'realestate2' => $realestate2
+            'villas' => $villas,
+            'hotels' => $hotels,
+            'lands' => $lands,
         ]);
     }
 
@@ -55,10 +61,17 @@ class HomeController extends Controller
     public function search(Request $request)
     {
         $searchQuery = $request->name;
+        $type = $request->type;
+        $price = $request->price;
 
-        $realestate = DB::table('realestate')->where('name', 'like',"%".$searchQuery."%")->paginate(12);
+
+        $realestate = DB::table('realestate')
+        ->where('name', 'like', "%" . $searchQuery . "%")
+        ->where('price_usd', '<=', $price)
+        ->orWhere('type',  $type)
+        ->paginate(12);
+        
 
         return view('pages.realestate')->with(['realestate' => $realestate]);
-        // return response()->json(['realestate' => $realestate]);
     }
 }

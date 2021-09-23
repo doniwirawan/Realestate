@@ -26,6 +26,10 @@
             </select>
         </div>
 
+        
+        <label for="area">Area</label>
+        <input type="text" class="form-control" name="area" placeholder="Ubud" id="area">
+
         <div class="form-group">
             <label for="exampleFormControlSelect2">Status</label>
             <select class="form-control" id="exampleFormControlSelect2" name="status">

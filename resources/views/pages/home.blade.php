@@ -130,6 +130,9 @@ Home
 </section>
 <!--/ Services End /-->
 
+
+
+
 <!--/ Property Star /-->
 <section class="section-property section-t8">
     <div class="container">
@@ -205,103 +208,9 @@ Home
             </div>
             @endforeach
           </div>
-
-          
-
-
-
 </section>
 <!--/ Property End /-->
 
 
-
-<!--/ Property Star /-->
-<section class="section-property section-t8">
-    <div class="container">
-        {{-- <div class="row">
-            <div class="col-md-12">
-                <div class="title-wrap d-flex justify-content-between">
-                    <div class="title-box">
-                        <h2 class="title-a">All Properties</h2>
-                    </div>
-                    <div class="title-link">
-                        <a href="/realestate">All Property
-                            <span class="ion-ios-arrow-forward"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <div id="property-carousel" class="owl-carousel owl-theme">
-            @foreach ($realestate2 as $item2)
-                {{-- one item2 --}}
-            <div class="col-md-4">
-                <div class="card-box-a card-shadow">
-                    <div class="img-box-a">
-                        <img src="img/{{$item2->img}}" alt="" class="img-a img-fluid">
-                    </div>
-                    <div class="card-overlay">
-                        <div class="card-overlay-a-content">
-                            <div class="card-header-a">
-                                <h2 class="card-title-a">
-                                    <a href="#">{{$item2->name}}</a>
-                                </h2>
-                            </div>
-                            <div class="card-body-a">
-                                <div class="price-box d-flex">
-                                    <span class="price-a">{{$item2->status}} | IDR @money($item2->price_usd)</span>
-                                </div>
-                                <a href="realestate/{{$item2->slug}}" class="link-a">Click here to view
-                                    <span class="ion-ios-arrow-forward"></span>
-                                </a>
-                            </div>
-                            <div class="card-footer-a">
-                                <ul class="card-info d-flex justify-content-around">
-                                    <li>
-                                        <h4 class="card-info-title">Area</h4>
-                                        <span>{{$item2->size}}m
-                                            <sup>2</sup>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        @if ($item2->beds)
-                                             <h4 class="card-info-title">Beds</h4>
-                                        <span>{{$item2->beds}}</span>
-                                        @endif
-                                       
-                                    </li>
-                                    <li>
-                                        @if ($item2->baths)
-                                             <h4 class="card-info-title">Baths</h4>
-                                        <span>{{$item2->baths}}</span>
-                                        @endif
-                                       
-                                    </li>
-                                    {{-- <li>
-                                        <h4 class="card-info-title">Garages</h4>
-                                        <span>1</span>
-                                    </li> --}}
-                                    <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20{{$item2->name}}" target="_blank" rel="noopener noreferrer" class="btn bg-white text-success"><i class="fa fa-whatsapp mr-2"></i>Buy</a>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{-- one item --}}
-            @endforeach
-
-             <div class="row">
-                <div class="col-sm-12">
-                    <nav class="pagination-a">
-                    <ul class="pagination justify-content-end">
-                        {{ $realestate2->links() }}
-                    </ul>
-                </nav>
-            </div>
-
-          </div>
-</section>
-<!--/ Property End /-->
 
 @endsection
