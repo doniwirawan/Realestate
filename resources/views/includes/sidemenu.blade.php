@@ -17,7 +17,7 @@
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="area">Area</label>
-              <select class="form-control form-control-lg form-control-a" id="area" name="area">
+              <select class="form-control form-control-lg form-control-a" id="area" name="area" required>
                  <option value="" selected disabled hidden>Choose here</option>
                 <option>Ubud</option>
                 <option>Canggu</option>
@@ -28,7 +28,7 @@
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="Type">Type</label>
-              <select class="form-control form-control-lg form-control-a" id="Type" name="type">
+              <select class="form-control form-control-lg form-control-a" id="Type" name="type" required>
                  <option value="" selected disabled hidden>Choose here</option>
                 <option>Land</option>
                 <option>Hotel</option>
@@ -39,7 +39,7 @@
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="price">Max Price</label>
-              <select class="form-control form-control-lg form-control-a" id="price" name="price">
+              <select class="form-control form-control-lg form-control-a" id="price" name="price" required>
                  <option value="" selected disabled hidden>Choose here</option>
                 <option value="500000000">IDR 500,000,000.00</option>
                 <option value="1000000000">IDR 1,000,000,000.00</option>
