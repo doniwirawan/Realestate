@@ -26,6 +26,17 @@ class HomeController extends Controller
         ]);
     }
 
+    public function type(Request $request)
+    {
+        $type = $request->type;
+
+        $realestate = DB::table('realestate')->where('type', $type)->paginate(12);
+
+        return view('pages.realestate')->with([
+            'realestate' => $realestate
+        ]);
+    }
+
     public function about()
     {
         return view('pages.about');

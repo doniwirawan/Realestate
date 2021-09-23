@@ -32,6 +32,8 @@ Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
 Route::get('/maps',[HomeController::class, 'maps'])->name('maps');
 
+Route::get('/category/{type}',[HomeController::class, 'type'])->name('showType');
+
 
 Auth::routes();
 
