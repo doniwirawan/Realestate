@@ -36,6 +36,12 @@
               </select>
             </div>
           </div>
+          {{-- <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label for="price">Max Price</label>
+              <input type="range" min="500000000" max="10000000000000">
+            </div>
+          </div> --}}
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="price">Max Price</label>
