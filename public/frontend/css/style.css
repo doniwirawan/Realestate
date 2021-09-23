@@ -994,7 +994,7 @@ a:hover {
 .card-box-b .img-a,
 .card-box-b .img-b {
   transition: .8s all ease-in-out;
-  height: 200px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
