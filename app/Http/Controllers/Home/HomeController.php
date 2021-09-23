@@ -60,13 +60,14 @@ class HomeController extends Controller
 
     public function search(Request $request)
     {
-        $searchQuery = $request->name;
+        // $searchQuery = $request->name;
+        $area = $request->area;
         $type = $request->type;
         $price = $request->price;
 
 
         $realestate = DB::table('realestate')
-        ->where('name', 'like', "%" . $searchQuery . "%")
+        ->where('area', 'like', "%" . $area . "%")
         ->where('price_usd', '<=', $price)
         ->orWhere('type',  $type)
         ->paginate(12);
