@@ -30,11 +30,24 @@ class HomeController extends Controller
     {
         $type = $request->type;
 
-        $realestate = DB::table('realestate')->where('type', $type)->paginate(12);
+        if ($type === '') {
+            return redirect('/realestate');
+        }else if($type === 'all') {
 
-        return view('pages.realestate')->with([
-            'realestate' => $realestate
-        ]);
+            $realestate = DB::table('realestate')->paginate(12);
+
+            return view('pages.realestate')->with(['realestate' => $realestate]);
+        }else{
+            $realestate = DB::table('realestate')->where('type', $type)->paginate(12);
+
+
+
+            return view('pages.realestate')->with([
+                'realestate' => $realestate
+            ]);
+        }
+
+        
     }
 
     public function about()
@@ -42,12 +55,12 @@ class HomeController extends Controller
         return view('pages.about');
     }
 
-    public function realestate()
-    {
-        $realestate = DB::table('realestate')->paginate(12);
+    // public function realestate()
+    // {
+    //     $realestate = DB::table('realestate')->paginate(12);
 
-        return view('pages.realestate')->with(['realestate' => $realestate]);
-    }
+    //     return view('pages.realestate')->with(['realestate' => $realestate]);
+    // }
 
     public function single($slug)
     {

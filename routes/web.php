@@ -22,7 +22,7 @@ Route::get('/',[HomeController::class, 'index'])->name('index');
 
 Route::get('/about',[HomeController::class, 'about'])->name('about');
 
-Route::get('/realestate',[HomeController::class, 'realestate'])->name('realestate');
+// Route::get('/realestate',[HomeController::class, 'realestate'])->name('realestate');
 
 Route::get('/realestate/{slug}',[HomeController::class, 'single'])->name('realestateDetail');
 
