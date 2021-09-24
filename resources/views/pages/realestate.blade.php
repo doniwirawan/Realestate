@@ -64,7 +64,7 @@ Real Estate
                         <div class="card-overlay-a-content">
                             <div class="card-header-a">
                                 <h2 class="card-title-a">
-                                    <a href="#">{{$item->name}}</a>
+                                    <a href="/realestate/{{$item->slug}}">{{$item->name}}</a>
                                 </h2>
                             </div>
                             <div class="card-body-a">
