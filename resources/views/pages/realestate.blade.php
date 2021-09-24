@@ -9,6 +9,7 @@ Real Estate
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="title-single-box">
+                    
                     <h1 class="title-single">
                         Our Amazing Properties    
                     </h1>
@@ -51,10 +52,6 @@ Real Estate
                 </div>
             </div>
 
-            @if(!$realestate)
-                
-                
-            @endif
 
             @foreach ($realestate as $item)
             {{-- one item --}}
@@ -147,6 +144,7 @@ Real Estate
         </div>
     </div>
 </section>
+
 
 
 @endsection

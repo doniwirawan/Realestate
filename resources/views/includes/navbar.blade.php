@@ -35,7 +35,7 @@
                          Real Estate
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <a class="dropdown-item" href="/category/all">All Real Estate</a>
+                         <a class="dropdown-item" href="/category/all ">All Real Estate</a>
                          <a class="dropdown-item" href="/category/hotel">Hotel for Sale</a>
                          <a class="dropdown-item" href="/category/land">Land for Sale</a>
                          <a class="dropdown-item" href="/category/villa">Villa for Sale</a>
