@@ -118,4 +118,22 @@ Contact
     </div>
 </section>
 <!--/ Contact End /-->
+
+
+{{-- cta --}}
+<section class="call-to-action p-5 mt-5 bg-maps">
+    <div class="container p-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <h2 class="title-a text-center">Maps</h2>
+                <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus eum tempora illum nostrum exercitationem rerum vero doloremque possimus dignissimos.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center" id="map">
+                {{-- <a href="/realestate" class="btn btn-outline-success w-10 d-flex align-items-center justify-content-center mx-1">Card View</a> --}}
+                <a href="/maps" class="btn btn-success  d-flex align-items-center justify-content-center mx-1 p-2 h5">Check Our Maps</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
