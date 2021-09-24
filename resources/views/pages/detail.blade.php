@@ -73,7 +73,7 @@
                             <div class="summary-list">
                                 <ul class="list">
                                     <li class="d-flex justify-content-between">
-                                        <strong>Property ID:</strong>
+                                        <strong>Property Code:</strong>
                                         <span>{{$item->id}}</span>
                                     </li>
                                     {{-- <li class="d-flex justify-content-between">
