@@ -37,7 +37,7 @@
             }
 
             // add pin point and pop up
-            function addPopUp(map, latLng, link, name, desc, price, size, type, status, slug) {
+            function addPopUp(map, latLng, link, name, desc, price, size, type, status, slug, bath, bed, pool) {
 
                 let marker = L.marker(latLng).addTo(map);
                 marker.bindPopup(
@@ -53,7 +53,10 @@
                     <small class="bg-dark p-1 rounded text-light">${status}</small>
 
                     <div class="feature d-flex  border-bottom">
-                        <p><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>
+                        <p class="px-1 border-right"><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>
+                        <p class="px-1 border-right"><i class="fas fa-bath mr-2"></i>${bath}</p>
+                        <p class="px-1 border-right"><i class="fas fa-bed mr-2"></i>${bed}</p>
+                        <p class="px-1 "><i class="fas fa-swimmer mr-2"></i>${pool}</p>
                     </div>
                     
                     <p class="card-text mt-2 pb-2 border-bottom">${desc}</p>
@@ -76,7 +79,7 @@
                 const price = Number(latLng.price_usd)
 
                 // adding pop up and pin point
-                addPopUp(map, pointArray, latLng.img, latLng.name, latLng.desc, latLng.price_usd, latLng.size, latLng.type, latLng.status, latLng.slug);
+                addPopUp(map, pointArray, latLng.img, latLng.name, latLng.desc, latLng.price_usd, latLng.size, latLng.type, latLng.status, latLng.slug, latLng.baths, latLng.beds,latLng.pools );
 
             });
 

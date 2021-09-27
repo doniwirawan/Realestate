@@ -2049,3 +2049,7 @@ footer .credits {
 .btn-set-height{
   max-height: 40px;
 }
+
+small.rounded{
+  text-transform: uppercase;
+}
