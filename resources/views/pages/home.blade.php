@@ -63,10 +63,7 @@ Home
                     </div>
                     <div class="card-body-c">
                         <p class="content-c">
-                            Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien
-                            massa,
-                            convallis a pellentesque
-                            nec, egestas non nisi.
+                           We have a wide range option of villas and land. We do selection, verification, valuation, neighborhood checking, and maintaining relationship with notary, lawyer, and other related network to assured you a great and safe property investment.
                         </p>
                     </div>
                     {{-- <div class="card-footer-c">
@@ -88,10 +85,7 @@ Home
                     </div>
                     <div class="card-body-c">
                         <p class="content-c">
-                            Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris
-                            blandit
-                            aliquet elit, eget tincidunt
-                            nibh pulvinar a.
+                           Knowing and understanding the customer's needs, tastes, and plans for the future are the keys to match our customers with the perfect property. We assist and help you in the entire process right from the start until the property is in your hand.
                         </p>
                     </div>
                     {{-- <div class="card-footer-c">
@@ -113,10 +107,7 @@ Home
                     </div>
                     <div class="card-body-c">
                         <p class="content-c">
-                            Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien
-                            massa,
-                            convallis a pellentesque
-                            nec, egestas non nisi.
+                            Using our technology tools we can generate new requests every day, therefore we can match your property with the right buyer. Sell your property with us to get your property sold out at a great price with a simple, fast and stress-less process.
                         </p>
                     </div>
                     {{-- <div class="card-footer-c">

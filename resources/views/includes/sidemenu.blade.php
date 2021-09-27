@@ -19,9 +19,17 @@
               <label for="area">Area</label>
               <select class="form-control form-control-lg form-control-a" id="area" name="area" required>
                  <option value="" selected disabled hidden>Choose here</option>
-                <option>Ubud</option>
-                <option>Canggu</option>
-                <option>Kuta</option>
+                <option value="ubud">Ubud</option>
+                <option value="canggu">Canggu</option>
+                <option value="kuta">Kuta</option>
+                <option value="nusa dua">Nusa Dua</option>
+                <option value="jimbaran">Jimbaran</option>
+                <option value="sanur">Sanur</option>
+                <option value="nusa penida">Nusa Penida</option>
+                <option value="North Bali">North Bali</option>
+                <option value="West Bali">West Bali</option>
+                <option value="South Bali">South Bali</option>
+                <option value="East Bali">East Bali</option>
               </select>
             </div>
           </div>
@@ -30,9 +38,9 @@
               <label for="Type">Type</label>
               <select class="form-control form-control-lg form-control-a" id="Type" name="type" required>
                  <option value="" selected disabled hidden>Choose here</option>
-                <option>Land</option>
-                <option>Hotel</option>
-                <option>Villa</option>
+                <option value="land">Land</option>
+                <option value="hotel">Hotel</option>
+                <option value="villa">Villa</option>
               </select>
             </div>
           </div>
