@@ -32,8 +32,9 @@
             <td>{{$realestate->type}}</td>
             <td>
 
-                <a href="/realestate/edit/{{$realestate->id}}" class="btn btn-primary">Edit</a>
-                <a href="/realestate/delete/{{$realestate->id}}" class="btn btn-danger">Delete</a>
+                <form method="GET" action="/realestate/edit/{{$realestate->id}}"><button type="submit" class="btn btn-primary">Edit</button></form>
+
+                 <form method="GET" action="/realestate/delete/{{$realestate->id}}"><button type="submit" class="btn btn-danger">Delete</button></form>
             </td>
         </tr>
         @endforeach
