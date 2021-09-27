@@ -37,7 +37,7 @@
             }
 
             // add pin point and pop up
-            function addPopUp(map, latLng, link, name, desc, price, size, type, status) {
+            function addPopUp(map, latLng, link, name, desc, price, size, type, status, slug) {
 
                 let marker = L.marker(latLng).addTo(map);
                 marker.bindPopup(
@@ -58,6 +58,8 @@
                     
                     <p class="card-text mt-2 pb-2 border-bottom">${desc}</p>
                     <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20${name}" class="text-white btn btn-success"><i class="fab fa-whatsapp"></i> Contact Us</a>
+                    
+                    <a href="/realestate/${slug}" class="text-white btn btn-secondary"> Details</a>
                 </div>
             </div>
         `).openPopup();
@@ -74,7 +76,7 @@
                 const price = Number(latLng.price_usd)
 
                 // adding pop up and pin point
-                addPopUp(map, pointArray, latLng.img, latLng.name, latLng.desc, latLng.price_usd, latLng.size, latLng.type, latLng.status);
+                addPopUp(map, pointArray, latLng.img, latLng.name, latLng.desc, latLng.price_usd, latLng.size, latLng.type, latLng.status, latLng.slug);
 
             });
 
