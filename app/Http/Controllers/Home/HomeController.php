@@ -92,8 +92,8 @@ class HomeController extends Controller
 
         $realestate = DB::table('realestate')
         ->where('area', 'like', "%" . $area . "%")
-        ->where('price_usd', '<=', $price)
         ->where('type',  $type)
+        ->where('price_usd', '<=', $price)
         ->paginate(12);
         
 
