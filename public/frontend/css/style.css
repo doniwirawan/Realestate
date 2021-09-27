@@ -2045,3 +2045,7 @@ footer .credits {
   background-size: cover;
   background-position: center ;
 }
+
+.btn-set-height{
+  max-height: 40px;
+}

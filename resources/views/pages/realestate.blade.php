@@ -9,9 +9,9 @@ Real Estate
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <div class="title-single-box">
-                    
+
                     <h1 class="title-single">
-                        Our Amazing Properties    
+                        Our Amazing Properties
                     </h1>
                     {{-- <span class="color-text-a">Grid Properties</span> --}}
                 </div>
@@ -37,7 +37,7 @@ Real Estate
 <!--/ Property Grid Star /-->
 <section class="property-grid grid">
     <div class="container">
-        
+
         <div class="row">
             <div class="col-sm-12">
                 <div class="grid-option">
@@ -49,8 +49,12 @@ Real Estate
                             <option value="3">For Sale</option>
                         </select>
                     </form> --}}
+                    {{-- <form class="col-12">
+                        <input type="name" class="col-12">
+                    </form> --}}
                 </div>
             </div>
+
 
 
             @foreach ($realestate as $item)
@@ -102,8 +106,8 @@ Real Estate
                                         <span>1</span>
                                     </li> --}}
                                     <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20{{$item->name}}"
-                                        target="_blank" rel="noopener noreferrer" class="btn bg-white text-success"><i
-                                            class="fa fa-whatsapp mr-2"></i>Buy</a>
+                                        target="_blank" rel="noopener noreferrer" class="btn bg-white text-success btn-set-height"><i
+                                            class="fa fa-whatsapp mr-2"></i>Contact Us</a>
                                 </ul>
                             </div>
                         </div>
@@ -135,11 +139,14 @@ Real Estate
         <div class="row d-flex justify-content-center">
             <div class="col-12">
                 <h2 class="title-a text-center">Maps</h2>
-                <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus eum tempora illum nostrum exercitationem rerum vero doloremque possimus dignissimos.</p>
+                <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus
+                    eum tempora illum nostrum exercitationem rerum vero doloremque possimus dignissimos.</p>
             </div>
             <div class="col-12 d-flex justify-content-center" id="map">
                 {{-- <a href="/realestate" class="btn btn-outline-success w-10 d-flex align-items-center justify-content-center mx-1">Card View</a> --}}
-                <a href="/maps" class="btn btn-success  d-flex align-items-center justify-content-center mx-1 p-2 h5">Check Our Maps</a>
+                <a href="/maps"
+                    class="btn btn-success  d-flex align-items-center justify-content-center mx-1 p-2 h5">Check Our
+                    Maps</a>
             </div>
         </div>
     </div>
