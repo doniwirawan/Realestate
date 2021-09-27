@@ -22,6 +22,7 @@
     <main class="py-5">
         @yield('content')
     </main>
+    @include('includes.script')
     @include('includes.admin.script')
 </body>
 </html>

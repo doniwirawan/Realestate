@@ -6,17 +6,28 @@
 
 
             <div class="d-flex">
-                <a class="nav-link me-5" href="#">
+                {{-- <a class="nav-link me-5" href="#">
 
                     <i class="fa fa-user"></i>
                     Hello,
                     {{ Auth::user()->name }}
-                </a>
+                </a> --}}
 
-                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+               
+
+                <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Hello,
+                    {{ Auth::user()->name }}
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                 </a>
+                     </div>
+                 </li>
             </div>
 
 
