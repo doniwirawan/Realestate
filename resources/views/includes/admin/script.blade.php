@@ -40,4 +40,4 @@
 
 
         <!-- custom js -->
-        <script src="./backend/js/script.js"></script>
+        <script src="/backend/js/script.js"></script>
