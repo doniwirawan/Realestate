@@ -32,9 +32,9 @@
             <td>{{$realestate->type}}</td>
             <td>
 
-                <form method="GET" action="/realestate/edit/{{$realestate->id}}"><button type="submit" class="btn btn-primary">Edit</button></form>
+                <form method="GET" action="/realestate/edit/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-primary">Edit</button></form>
 
-                 <form method="GET" action="/realestate/delete/{{$realestate->id}}"><button type="submit" class="btn btn-danger">Delete</button></form>
+                 <form method="GET" action="/realestate/delete/{{$realestate->id}}" class="m-1"><button type="submit" class="btn btn-danger">Delete</button></form>
             </td>
         </tr>
         @endforeach

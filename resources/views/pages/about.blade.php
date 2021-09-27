@@ -52,7 +52,7 @@ About
                     </div>
                     <div class="col-lg-2  d-none d-lg-block">
                         <div class="title-vertical d-flex justify-content-start">
-                            <span>Meet CEO of Soli Real Estate</span>
+                            <span>Meet CEO of Indonesia Property Hub</span>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 section-md-t3">
