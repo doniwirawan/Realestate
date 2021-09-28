@@ -167,28 +167,28 @@ Home
                             <div class="card-footer-a">
                                 <ul class="card-info d-flex justify-content-around">
                                     <li>
-                                        <h4 class="card-info-title">Area</h4>
-                                        <span>{{$item->size}}m
+                                        <h4 class="card-info-title text-center"><i class="fas fa-ruler-horizontal mr-2"></i></h4>
+                                        <span>{{$item->size}} m
                                             <sup>2</sup>
                                         </span>
                                     </li>
                                     <li>
                                         @if ($item->beds)
-                                        <h4 class="card-info-title">Beds</h4>
+                                        <h4 class="card-info-title"><i class="fas fa-bed mr-2"></i></h4>
                                         <span>{{$item->beds}}</span>
                                         @endif
 
                                     </li>
                                     <li>
                                         @if ($item->baths)
-                                        <h4 class="card-info-title">Baths</h4>
+                                        <h4 class="card-info-title"><i class="fas fa-bath mr-2"></i></h4>
                                         <span>{{$item->baths}}</span>
                                         @endif
 
                                     </li>
                                     <li>
                                         @if ($item->pools)
-                                        <h4 class="card-info-title">pools</h4>
+                                        <h4 class="card-info-title"><i class="fas fa-swimmer mr-2"></i></h4>
                                         <span>{{$item->pools}}</span>
                                         @endif
 
