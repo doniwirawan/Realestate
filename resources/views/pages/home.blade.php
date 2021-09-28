@@ -21,6 +21,10 @@ Home
                                         <a href="/realestate/{{$item->slug}}"><span class="price-a">{{$item->status}} | IDR
                                                 @money($item->price_usd)</span></a>
                                     </p>
+                                    <br>
+                                    <a href="/realestate/{{$item->slug}}" class="link-a ">Click here to view
+                                    <span class="ion-ios-arrow-forward"></span>
+                                </a>
                                 </div>
                             </div>
                         </div>
