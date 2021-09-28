@@ -5,12 +5,9 @@ Home
 @section('content')
 <!--/ Carousel Star /-->
 <div class="intro intro-carousel">
-
     <div id="carousel" class="owl-carousel owl-theme">
-
         @foreach ($realestate as $item)
         <div class="carousel-item-a intro-item bg-image" style="background-image: url('storage/img/{{$item->img}}')">
-
             <div class="overlay overlay-a"></div>
             <div class="intro-content display-table">
                 <div class="table-cell">
@@ -32,8 +29,6 @@ Home
             </div>
         </div>
         @endforeach
-
-
     </div>
 </div>
 <!--/ Carousel end /-->
@@ -66,11 +61,6 @@ Home
                            We have a wide range option of villas and land. We do selection, verification, valuation, neighborhood checking, and maintaining relationship with notary, lawyer, and other related network to assured you a great and safe property investment.
                         </p>
                     </div>
-                    {{-- <div class="card-footer-c">
-                        <a href="#" class="link-c link-icon">Read more
-                            <span class="ion-ios-arrow-forward"></span>
-                        </a>
-                    </div> --}}
                 </div>
             </div>
             <div class="col-md-4">
@@ -88,11 +78,6 @@ Home
                            Knowing and understanding the customer's needs, tastes, and plans for the future are the keys to match our customers with the perfect property. We assist and help you in the entire process right from the start until the property is in your hand.
                         </p>
                     </div>
-                    {{-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> --}}
                 </div>
             </div>
             <div class="col-md-4">
@@ -110,20 +95,12 @@ Home
                             Using our technology tools we can generate new requests every day, therefore we can match your property with the right buyer. Sell your property with us to get your property sold out at a great price with a simple, fast and stress-less process.
                         </p>
                     </div>
-                    {{-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> --}}
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--/ Services End /-->
-
-
-
 
 <!--/ Property Star /-->
 <section class="section-property section-t8">
@@ -193,11 +170,6 @@ Home
                                         @endif
 
                                     </li>
-                                    {{-- <li>
-                                        <h4 class="card-info-title">Garages</h4>
-                                        <span>1</span>
-                                    </li> --}}
-
                                     <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20{{$item->name}}"
                                         target="_blank" rel="noopener noreferrer" class="btn bg-white text-success btn-set-height"><i
                                             class="fa fa-whatsapp mr-2"></i>Contact Us</a>
@@ -212,7 +184,6 @@ Home
 </section>
 <!--/ Property End /-->
 
-
 {{-- cta --}}
 <section class="call-to-action p-5 mt-5 bg-maps">
     <div class="container p-4">
@@ -222,7 +193,6 @@ Home
                 <p class="text-center text-white">for those of you who prefer a map view, we have it for you.</p>
             </div>
             <div class="col-12 d-flex justify-content-center" id="map">
-                {{-- <a href="/realestate" class="btn btn-outline-success w-10 d-flex align-items-center justify-content-center mx-1">Card View</a> --}}
                 <a href="/maps" class="btn btn-success  d-flex align-items-center justify-content-center mx-1 p-2 h5">Check Our Maps</a>
             </div>
         </div>

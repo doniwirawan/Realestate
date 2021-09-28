@@ -34,15 +34,6 @@ Contact
 <section class="contact">
     <div class="container">
         <div class="row">
-            {{-- <div class="col-sm-12">
-                <div class="contact-map box">
-                    <div id="map" class="contact-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
-                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div> --}}
             <div class="col-sm-12 section-t8">
                 <div class="row">
                     <div class="col-md-5 section-md-t3">
@@ -116,17 +107,15 @@ Contact
 </section>
 <!--/ Contact End /-->
 
-
 {{-- cta --}}
 <section class="call-to-action p-5 mt-5 bg-maps">
     <div class="container p-4">
         <div class="row d-flex justify-content-center">
             <div class="col-12">
                 <h2 class="title-a text-center">Maps</h2>
-                <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus eum tempora illum nostrum exercitationem rerum vero doloremque possimus dignissimos.</p>
+                <p class="text-center text-white">for those of you who prefer a map view, we have it for you.</p>
             </div>
             <div class="col-12 d-flex justify-content-center" id="map">
-                {{-- <a href="/realestate" class="btn btn-outline-success w-10 d-flex align-items-center justify-content-center mx-1">Card View</a> --}}
                 <a href="/maps" class="btn btn-success  d-flex align-items-center justify-content-center mx-1 p-2 h5">Check Our Maps</a>
             </div>
         </div>

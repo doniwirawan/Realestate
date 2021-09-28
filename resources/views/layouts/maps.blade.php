@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-
     <meta charset="utf-8" />
     <title>@yield('title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
     <!-- Favicons -->
     <link href="{{url('./frontend/img/favicon.png')}}" rel="icon">
     <link href="{{url('./frontend/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"
         integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -43,30 +37,14 @@
         border:none;
     }
 </style>
-
 <body>
     @include('includes.navbar')
     @include('includes.sidemenu')
-
-
     @yield('content')
-
-
-
-
-    
     @include('includes.script')
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        @include('includes.maps.script')
-
-
-
-
-
+    @include('includes.maps.script')
 </body>
-
 </html>

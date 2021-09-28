@@ -8,6 +8,5 @@
   <script src="{{url('frontend/lib/scrollreveal/scrollreveal.min.js')}}"></script>
   <!-- Contact Form JavaScript File -->
   <script src="{{url('frontend/contactform/contactform.js')}}"></script>
-
   <!-- Template Main Javascript File -->
   <script src="{{url('./frontend/js/main.js')}}"></script>

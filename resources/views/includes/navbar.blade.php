@@ -3,7 +3,6 @@
      class="whatsapp-button btn-success text-center d-flex align-items-center justify-content-center">
      <i class="fa fa-whatsapp fa-3x"></i>
  </a>
-
  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
      <div class="container">
          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
@@ -25,10 +24,6 @@
                  <li class="nav-item ">
                      <a class="nav-link {{ request()->is('about') ? 'active' : '' }} " href="/about">About</a>
                  </li>
-                 {{-- <li class="nav-item  ">
-                     <a class="nav-link  {{ request()->is('realestate/*') || request()->is('realestate') || request()->is('search/*')  ? 'active' : '' }}"
-                         href="/realestate">Real Estate</a>
-                 </li> --}}
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +36,6 @@
                          <a class="dropdown-item" href="/category/villa">Villa for Sale</a>
                      </div>
                  </li>
-
                  <li class="nav-item  ">
                      <a class="nav-link  {{ request()->is('maps') ? 'active' : '' }}" href="/maps">Maps</a>
                  </li>

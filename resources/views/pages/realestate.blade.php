@@ -13,7 +13,6 @@ Real Estate
                     <h1 class="title-single">
                         Our Amazing Properties
                     </h1>
-                    {{-- <span class="color-text-a">Grid Properties</span> --}}
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">
@@ -41,17 +40,6 @@ Real Estate
         <div class="row">
             <div class="col-sm-12">
                 <div class="grid-option">
-                    {{-- <form>
-                        <select class="custom-select">
-                            <option selected>All</option>
-                            <option value="1">New to Old</option>
-                            <option value="2">For Rent</option>
-                            <option value="3">For Sale</option>
-                        </select>
-                    </form> --}}
-                    {{-- <form class="col-12">
-                        <input type="name" class="col-12">
-                    </form> --}}
                 </div>
             </div>
 
@@ -146,10 +134,9 @@ Real Estate
         <div class="row d-flex justify-content-center">
             <div class="col-12">
                 <h2 class="title-a text-center">Maps</h2>
-                <p class="text-center text-white">for those of you who prefer a map view, we have it for you..</p>
+                <p class="text-center text-white">for those of you who prefer a map view, we have it for you.</p>
             </div>
             <div class="col-12 d-flex justify-content-center" id="map">
-                {{-- <a href="/realestate" class="btn btn-outline-success w-10 d-flex align-items-center justify-content-center mx-1">Card View</a> --}}
                 <a href="/maps"
                     class="btn btn-success  d-flex align-items-center justify-content-center mx-1 p-2 h5">Check Our
                     Maps</a>

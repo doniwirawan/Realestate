@@ -8,12 +8,6 @@
       <form action="{{url('/search')}}"  method="GET"  class="form-a">
         {{ @csrf_field() }}
         <div class="row">
-          {{-- <div class="col-md-12 mb-2">
-            <div class="form-group">
-              <label for="Type">Keyword</label>
-              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword" name="name"  value="">
-            </div>
-          </div> --}}
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="area">Area</label>
@@ -44,12 +38,6 @@
               </select>
             </div>
           </div>
-          {{-- <div class="col-md-12 mb-2">
-            <div class="form-group">
-              <label for="price">Max Price</label>
-              <input type="range" min="500000000" max="10000000000000">
-            </div>
-          </div> --}}
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="price">Max Price</label>

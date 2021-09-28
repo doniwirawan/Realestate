@@ -1,8 +1,5 @@
-<!-- -->
-
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,7 +11,6 @@
     <link rel="shortcut icon" href="" alt="ptahbali logo">
     <title>IRH ADMIN</title>
 </head>
-
 <body id="body-pd">
     @include('includes.admin.header')
    @include('includes.admin.sidebar')
