@@ -9,14 +9,12 @@
                     </div>
                     <div class="w-body-a">
                         <p class="w-text-a color-text-a">
-                            Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
-                            consequat duis
-                            sed aute irure.
+                            We Provide you the best properties in indonesia.
                         </p>
                     </div>
                     <div class="w-footer-a">
                         <ul class="list-unstyled">
-                            <a class="mb-1" href="">Email.
+                            <a class="mb-1" href="mailto:marketing@indonesiarealestatehub.com?subject=Feedback&body=Message">Email.
                                 <span class="color-a">marketing@example.com</span>
                             </a>
                             <br>
@@ -124,8 +122,14 @@
                         </li>
 
                         <li class="list-inline-item">
-                            <a href="https://instagram.com/ptah_bali">
+                            <a href="https://instagram.com/indonesia_property_hub">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="https://instagram.com/indonesia_property_hub">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
