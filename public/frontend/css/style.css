@@ -1065,8 +1065,8 @@ a:hover {
 .price-a {
   color: #ffffff;
   padding: .6rem .8rem;
-  border: 2px solid #4070FF;
-  border-radius: 50px;
+  border: 2px solid #f2f2f38c;
+  border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 0.030em;
 }
@@ -1075,7 +1075,7 @@ a:hover {
   width: 100%;
   position: absolute;
   z-index: 2;
-  background-color: #4070FF;
+  background-color: #dddee070;
 }
 
 .card-info {
