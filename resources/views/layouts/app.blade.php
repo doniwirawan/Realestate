@@ -25,6 +25,7 @@
   @include('includes.sidemenu')
   @include('includes.navbar')
   @yield('content')
+  @include('includes.maps')
   @include('includes.footer')
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>

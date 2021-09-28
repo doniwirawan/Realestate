@@ -1,6 +1,6 @@
  <!--/ Nav Star /-->
  <a href="https://wa.me/6282146333864" target="_blank" rel="noopener noreferrer"
-     class="whatsapp-button btn-success text-center d-flex align-items-center justify-content-center">
+     class="whatsapp-button btn-primary text-center d-flex align-items-center justify-content-center">
      <i class="fa fa-whatsapp fa-3x"></i>
  </a>
  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
