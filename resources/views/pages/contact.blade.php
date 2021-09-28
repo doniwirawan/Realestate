@@ -93,6 +93,12 @@ Contact
                                                     <i class="fa fa-instagram" aria-hidden="true"></i>
                                                 </a>
                                             </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="https://instagram.com/ptah_bali" class="link-one">
+                                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
                                             
                                         </ul>
                                     </div>

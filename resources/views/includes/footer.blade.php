@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-4">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">Indonesia Property Hub</h3>
+                        <h3 class="w-title-a text-brand">Indonesia Property <span class="color-b">Hub</span></h3>
                     </div>
                     <div class="w-body-a">
                         <p class="w-text-a color-text-a">
