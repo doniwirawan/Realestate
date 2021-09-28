@@ -12,7 +12,7 @@
     @include('includes.admin.style')
     <!-- favicon -->
     <link rel="shortcut icon" href="" alt="ptahbali logo">
-    <title>PTAH BALI ADMIN</title>
+    <title>IRH ADMIN</title>
 </head>
 
 <body id="body-pd">

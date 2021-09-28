@@ -186,6 +186,13 @@ Home
                                         @endif
 
                                     </li>
+                                    <li>
+                                        @if ($item->pools)
+                                        <h4 class="card-info-title">pools</h4>
+                                        <span>{{$item->pools}}</span>
+                                        @endif
+
+                                    </li>
                                     {{-- <li>
                                         <h4 class="card-info-title">Garages</h4>
                                         <span>1</span>

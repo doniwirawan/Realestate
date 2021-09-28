@@ -10,10 +10,7 @@ Contact
             <div class="col-md-12 col-lg-8">
                 <div class="title-single-box">
                     <h1 class="title-single">Contact US</h1>
-                    <span class="color-text-a">Aut voluptas consequatur unde sed omnis ex placeat quis eos. Aut natus
-                        officia corrupti qui autem fugit consectetur quo. Et ipsum eveniet laboriosam voluptas beatae
-                        possimus qui ducimus. Et voluptatem deleniti. Voluptatum voluptatibus amet. Et esse sed omnis
-                        inventore hic culpa.</span>
+                    <span class="color-text-a">Nice to meet you, do you have question? let us know.</span>
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">

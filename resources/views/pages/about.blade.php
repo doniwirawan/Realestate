@@ -287,7 +287,7 @@ About
         <div class="row d-flex justify-content-center">
             <div class="col-12">
                 <h2 class="title-a text-center">Maps</h2>
-                <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus eum tempora illum nostrum exercitationem rerum vero doloremque possimus dignissimos.</p>
+                <p class="text-center text-white">for those of you who prefer a map view, we have it for you..</p>
             </div>
             <div class="col-12 d-flex justify-content-center" id="map">
                 {{-- <a href="/realestate" class="btn btn-outline-success w-10 d-flex align-items-center justify-content-center mx-1">Card View</a> --}}

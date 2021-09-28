@@ -5,7 +5,7 @@
             <div class="col-sm-12 col-md-4">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">Soli Realestate</h3>
+                        <h3 class="w-title-a text-brand">Indonesia Property Hub</h3>
                     </div>
                     <div class="w-body-a">
                         <p class="w-text-a color-text-a">
@@ -31,7 +31,7 @@
             <div class="col-sm-12 col-md-4 section-md-t3 ">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">PTAH BALI</h3>
+                        <h3 class="w-title-a text-brand">IPH</h3>
                     </div>
                     <div class="w-body-a">
                         <div class="w-body-a">
@@ -133,16 +133,10 @@
                 <div class="copyright-footer">
                     <p class="copyright color-text-a">
                         &copy; Copyright
-                        <span class="color-a">Soli Real Estate</span> All Rights Reserved.
+                        <span class="color-a">Indonesia Property Hub</span> part of <a href="https://ptahbali.com" target="blank">PTAH BALI</a> & SDS All Rights Reserved.
                     </p>
                 </div>
                 <div class="credits">
-                    <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-            -->
                     {{-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> --}}
                 </div>
             </div>
