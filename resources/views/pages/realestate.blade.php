@@ -125,10 +125,4 @@ Real Estate
         </div>
 </section>
 <!--/ Property Grid End /-->
-
-
-
-
-
-
 @endsection

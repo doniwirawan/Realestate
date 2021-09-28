@@ -18,7 +18,7 @@ Home
                                     <h1 class="intro-title mb-4">
                                         <span class="color-b">{{$item->name}}</h1>
                                     <p class="intro-subtitle intro-price">
-                                        <a href="#"><span class="price-a">{{$item->status}} | IDR
+                                        <a href="/realestate/{{$item->slug}}"><span class="price-a">{{$item->status}} | IDR
                                                 @money($item->price_usd)</span></a>
                                     </p>
                                 </div>
