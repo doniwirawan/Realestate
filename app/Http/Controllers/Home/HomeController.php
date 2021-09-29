@@ -18,11 +18,14 @@ class HomeController extends Controller
 
         $lands = DB::table('realestate')->where('type', 'land')->paginate(12);
 
+        $maps = DB::table('realestate')->get();
+
         return view('pages.home')->with([
             'realestate' => $realestate, 
             'villas' => $villas,
             'hotels' => $hotels,
             'lands' => $lands,
+            'maps' => $maps,
         ]);
     }
 

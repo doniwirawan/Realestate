@@ -1,6 +1,6 @@
 <script>
       function main() {
-            const markersLatLngPic = @json($realestate);
+            const markersLatLngPic = @json($maps);
             // create map function
             function createMap(elemId, centerLat, centerLng, zoom) {
                 let map = new L.Map(elemId , { zoomControl: false }).fitWorld();

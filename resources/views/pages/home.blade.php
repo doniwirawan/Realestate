@@ -298,4 +298,7 @@ Home
         </div>
     </div>
 </section>
+
+  @include('includes.maps')
+
 @endsection
