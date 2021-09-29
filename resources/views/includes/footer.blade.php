@@ -101,7 +101,7 @@
                 <div class="copyright-footer">
                     <p class="copyright color-text-a">
                         &copy; Copyright
-                        <span class="color-a">Indonesia Property Hub</span> part of <a href="https://ptahbali.com" target="blank">PTAH BALI</a> & SDS All Rights Reserved.
+                        <span class="color-a">Indonesia Property Hub</span> part of & SDS All Rights Reserved.
                     </p>
                 </div>
             </div>

@@ -104,7 +104,7 @@
                                     </li>
                                     @endif
                                 </ul>
-                                <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy:%20{{$item->name}}" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-success h3 "><i class="fa fa-whatsapp pr-2"></i>Contact Us</a>
+                                <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy:%20{{$item->name}}" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-primary h3 "><i class="fa fa-whatsapp pr-2"></i>Contact Us</a>
                             </div>
                         </div>
                     </div>
