@@ -35,6 +35,8 @@ Route::get('/maps',[HomeController::class, 'maps'])->name('maps');
 
 Route::get('/category/{type}',[HomeController::class, 'type'])->name('showType');
 
+Route::get('/area/{area}',[HomeController::class, 'area'])->name('showArea');
+
 
 Auth::routes();
 

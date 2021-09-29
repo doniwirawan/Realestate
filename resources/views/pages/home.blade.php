@@ -18,13 +18,14 @@ Home
                                     <h1 class="intro-title mb-4">
                                         <span class="color-b">{{$item->name}}</h1>
                                     <p class="intro-subtitle intro-price">
-                                        <a href="/realestate/{{$item->slug}}"><span class="price-a">{{$item->status}} | IDR
+                                        <a href="/realestate/{{$item->slug}}"><span class="price-a">{{$item->status}} |
+                                                IDR
                                                 @money($item->price_usd)</span></a>
                                     </p>
                                     <br>
                                     <a href="/realestate/{{$item->slug}}" class="link-a ">Click here to view
-                                    <span class="ion-ios-arrow-forward"></span>
-                                </a>
+                                        <span class="ion-ios-arrow-forward"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +63,9 @@ Home
                     </div>
                     <div class="card-body-c">
                         <p class="content-c">
-                           We have a wide range option of villas and land. We do selection, verification, valuation, neighborhood checking, and maintaining relationship with notary, lawyer, and other related network to assured you a great and safe property investment.
+                            We have a wide range option of villas and land. We do selection, verification, valuation,
+                            neighborhood checking, and maintaining relationship with notary, lawyer, and other related
+                            network to assured you a great and safe property investment.
                         </p>
                     </div>
                 </div>
@@ -79,7 +82,9 @@ Home
                     </div>
                     <div class="card-body-c">
                         <p class="content-c">
-                           Knowing and understanding the customer's needs, tastes, and plans for the future are the keys to match our customers with the perfect property. We assist and help you in the entire process right from the start until the property is in your hand.
+                            Knowing and understanding the customer's needs, tastes, and plans for the future are the
+                            keys to match our customers with the perfect property. We assist and help you in the entire
+                            process right from the start until the property is in your hand.
                         </p>
                     </div>
                 </div>
@@ -96,7 +101,9 @@ Home
                     </div>
                     <div class="card-body-c">
                         <p class="content-c">
-                            Using our technology tools we can generate new requests every day, therefore we can match your property with the right buyer. Sell your property with us to get your property sold out at a great price with a simple, fast and stress-less process.
+                            Using our technology tools we can generate new requests every day, therefore we can match
+                            your property with the right buyer. Sell your property with us to get your property sold out
+                            at a great price with a simple, fast and stress-less process.
                         </p>
                     </div>
                 </div>
@@ -148,7 +155,8 @@ Home
                             <div class="card-footer-a">
                                 <ul class="card-info d-flex justify-content-around">
                                     <li>
-                                        <h4 class="card-info-title text-center"><i class="fas fa-ruler-horizontal mr-2"></i></h4>
+                                        <h4 class="card-info-title text-center"><i
+                                                class="fas fa-ruler-horizontal mr-2"></i></h4>
                                         <span>{{$item->size}} m
                                             <sup>2</sup>
                                         </span>
@@ -175,7 +183,8 @@ Home
 
                                     </li>
                                     <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20{{$item->name}}"
-                                        target="_blank" rel="noopener noreferrer" class="btn bg-white text-primary btn-set-height"><i
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="btn bg-white text-primary btn-set-height"><i
                                             class="fa fa-whatsapp mr-2"></i>Contact Us</a>
                                 </ul>
                             </div>
@@ -187,4 +196,106 @@ Home
         </div>
 </section>
 <!--/ Property End /-->
+
+{{-- card --}}
+<section class="mt-5">
+    <div class="container mt-5">
+         <div class="row mt-5">
+            <div class="col-md-12 mt-5">
+                <div class="title-wrap d-flex justify-content-between">
+                    <div class="title-box">
+                        <h2 class="title-a">Properties based on Area</h2>
+                    </div>
+                    <div class="title-link">
+                        <a href="/category/all">All Area
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/kuta">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/07/18/02/kuta-beach-2211524_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Kuta</h2>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/ubud">
+                    <img src="https://images.pexels.com/photos/5151206/pexels-photo-5151206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Ubud</h2>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/canggu">
+                    <img src="https://cdn.pixabay.com/photo/2020/09/06/09/05/beach-5548446_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Canggu</h2>
+                </a>
+            </div>
+       
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/nusa dua">
+                    <img src="https://cdn.pixabay.com/photo/2020/12/29/01/22/bali-5869020_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Nusa Dua</h2>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/jimbaran">
+                    <img src="https://cdn.pixabay.com/photo/2018/04/02/10/08/sunset-3283437_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Jimbaran</h2>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/sanur">
+                    <img src="https://cdn.pixabay.com/photo/2013/10/29/08/27/sea-202214_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Sanur</h2>
+                </a>
+            </div>
+       
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/nusa penida">
+                    <img src="https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Nusa Penida</h2>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/north bali">
+                    <img src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">North Bali</h2>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/west bali">
+                    <img src="https://cdn.pixabay.com/photo/2016/07/13/10/56/rice-1514141_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">West Bali</h2>
+                </a>
+            </div>
+       
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/area/east bali">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/24/11/17/bali-2170900_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">East Bali</h2>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
 @endsection

@@ -50,6 +50,25 @@ class HomeController extends Controller
         
     }
 
+
+    public function area(Request $request)
+    {
+        $area = $request->area;
+
+        if ($area === '') {
+            return redirect('/area/all');
+        }else if ($area === 'all') {
+            $realestate = DB::table('realestate')->paginate(12);
+            return view('pages.realestate')->with(['realestate' => $realestate]);
+        }else{
+            $realestate = DB::table('realestate')->where('area', 'like', "%" . $area . "%")->paginate(12);
+
+            return view('pages.realestate')->with([
+                'realestate' => $realestate
+            ]);
+        }
+    }
+
     public function about()
     {
         return view('pages.about');

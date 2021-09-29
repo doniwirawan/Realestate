@@ -2053,3 +2053,33 @@ footer .credits {
 small.rounded{
   text-transform: uppercase;
 }
+
+
+.position-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
+}
+
+.text-absolute{
+  top: 20px;
+  left: 30px;
+}
+
+.card-area{
+  overflow: hidden;
+  padding: 0 !important;
+}
+.card-area img{
+  height: 100%;
+  width: 110%;
+  object-fit: cover;
+}
+
+.card-area:hover img{
+  filter: blur(3px);
+  transition: all 1s;
+  transform: scale(1.2);
+}
