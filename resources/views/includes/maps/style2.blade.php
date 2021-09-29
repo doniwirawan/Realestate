@@ -16,7 +16,6 @@
         width: 100vw;
         max-width: 100%;
         margin: auto;
-        border-radius: 10px;
     }
 
     .card {
