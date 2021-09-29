@@ -82,7 +82,7 @@
                 <div class="socials-a">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a href="https://facebook.com/ptah_bali">
+                            <a href="https://www.facebook.com/Indonesia-Property-Hub-106549061792001/">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -92,7 +92,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://instagram.com/indonesia_property_hub">
+                            <a href="https://www.linkedin.com/company/76477572">
                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </li>
