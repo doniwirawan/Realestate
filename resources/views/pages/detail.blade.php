@@ -103,6 +103,12 @@
                                         <span>{{$item->baths}}</span>
                                     </li>
                                     @endif
+                                    @if ($item->pools)
+                                    <li class="d-flex justify-content-between">
+                                        <strong>Pools:</strong>
+                                        <span>{{$item->pools}}</span>
+                                    </li>
+                                    @endif
                                 </ul>
                                 <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy:%20{{$item->name}}" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-primary h3 "><i class="fa fa-whatsapp pr-2"></i>Contact Us</a>
                             </div>
