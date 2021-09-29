@@ -46,8 +46,8 @@ Contact
                                     <h4 class="icon-title">Say Hello</h4>
                                 </div>
                                 <div class="icon-box-content">
-                                    <a class="mb-1" href="">Email.
-                                        <span class="color-a">marketing@example.com</span>
+                                    <a class="mb-1" href="mailto:marketing@indonesiapropertyhub.com?subject=Feedback&body=Message">Email.
+                                        <span class="color-a">marketing@indonesiapropertyhub.com</span>
                                     </a>
                                     <br>
                                     <a class="mb-1" href="https://wa.me/6282146333864">Phone.
@@ -83,7 +83,7 @@ Contact
                                     <div class="socials-footer">
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
-                                                <a href="https://facebook.com/ptah_bali" class="link-one">
+                                                <a href="https://www.facebook.com/Indonesia-Property-Hub-106549061792001/" class="link-one">
                                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                                 </a>
                                             </li>
@@ -95,7 +95,7 @@ Contact
                                             </li>
 
                                             <li class="list-inline-item">
-                                                <a href="https://instagram.com/ptah_bali" class="link-one">
+                                                <a href="hhttps://www.linkedin.com/company/76477572" class="link-one">
                                                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                                                 </a>
                                             </li>
