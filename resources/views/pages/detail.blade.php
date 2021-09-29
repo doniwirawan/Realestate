@@ -40,8 +40,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
-                    <div class="carousel-item-b">
-                        <img src="/storage/img/{{$item->img}}" alt="" class="rounded">
+                    <div class="carousel-item-b image-detail">
+                        <img src="/storage/img/{{$item->img}}" alt="" class="rounded ">
                     </div>
                 </div>
                 <div class="row justify-content-between">
@@ -103,6 +103,7 @@
                                         <span>{{$item->baths}}</span>
                                     </li>
                                     @endif
+
                                     @if ($item->pools)
                                     <li class="d-flex justify-content-between">
                                         <strong>Pools:</strong>
