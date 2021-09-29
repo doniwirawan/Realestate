@@ -207,14 +207,14 @@ Home
                         <h2 class="title-a">Properties based on Area</h2>
                     </div>
                     <div class="title-link">
-                        <a href="/category/all">All Area
+                        <a href="/area/all">All Area
                             <span class="ion-ios-arrow-forward"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-4 col-sm-6 position-relative card-area ">
                 <a href="/area/kuta">
                     <img src="https://cdn.pixabay.com/photo/2017/04/07/18/02/kuta-beach-2211524_960_720.jpg"
