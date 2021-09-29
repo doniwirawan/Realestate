@@ -11,7 +11,7 @@
              <span></span>
              <span></span>
          </button>
-         <a class="navbar-brand text-brand" href="/">Indonesia Property<span class="color-b"> Hub</span></a>
+         <a class="navbar-brand text-brand" href="/">I P<span class="color-b"> H</span></a>
          <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
              data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
              <span class="fa fa-search" aria-hidden="true"></span>
