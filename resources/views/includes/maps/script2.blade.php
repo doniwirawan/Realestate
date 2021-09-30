@@ -41,7 +41,6 @@
                     </div>
                     ${sold >= 1? `<small class="bg-danger  p-1 rounded text-light">SOLD</small>`:`<small class="bg-secondary p-1 rounded text-light">${type}</small>
                     <small class="bg-dark p-1 rounded text-light">${status}</small>`}
-
                     <div class="feature d-flex  border-bottom">
                         <p class="px-1 border-right"><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>
                         <p class="px-1 border-right"><i class="fas fa-bath mr-2"></i>${bath}</p>

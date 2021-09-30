@@ -48,12 +48,22 @@
                     <div class="col-md-5 col-lg-4">
                         <div class="property-price d-flex justify-content-center foo">
                             <div class="card-header-c d-flex">
-                                <div class="card-box-ico">
+                                @if ($item->sold >=1)
+                                     <div class="card-box-ico card-box-ico--danger">
+                                    <span class="ion-money text-danger">SOLD</span>
+                                </div>
+                                <div class="card-title-c align-self-center">
+                                    <h5 class="title-c text-danger"></h5>
+                                </div>
+                                @else
+                                     <div class="card-box-ico">
                                     <span class="ion-money">IDR</span>
                                 </div>
                                 <div class="card-title-c align-self-center">
                                     <h5 class="title-c">@money($item->price_usd)</h5>
                                 </div>
+                                @endif
+                               
                             </div>
                         </div>
                         <div class="property-summary">

@@ -1315,6 +1315,10 @@ a:hover {
   padding: 1rem 3rem 1rem 2.5rem;
   border: 5px solid #4070ff74;
 }
+.card-box-ico--danger {
+  padding: 1rem 3rem 1rem 2.5rem;
+  border: 5px solid #ff003c2e;
+}
 
 .card-box-ico span {
   font-size: 4rem;
