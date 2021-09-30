@@ -472,7 +472,8 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.11);
+  display: none;
 }
 
 #preloader:before {
@@ -487,6 +488,8 @@ a:hover {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+  display: none;
+
 }
 
 @-webkit-keyframes animate-preloader {
