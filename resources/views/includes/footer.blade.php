@@ -30,7 +30,7 @@
                 <div class="widget-a">
                     <div class="w-header-a">
                         <h3 class="w-title-a navbar-brand text-brand">
-                            <img src="{{url('./frontend/img/favicon2.png')}}" alt="">
+                            <img src="{{url('./frontend/img/favicon.png')}}" alt="">
                         </h3>
                     </div>
                     <div class="w-body-a">
