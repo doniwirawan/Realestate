@@ -336,7 +336,7 @@ Home
 
             <div class="col-md-4 col-sm-6 position-relative card-area ">
                 <a href="/category/villa">
-                    <img src="frontend/img/project-1.jpg"
+                    <img src="frontend/img/bali.jpg"
                     alt="" class="img-fluid">
                 <h2 class="position-absolute text-absolute text-light">Villa</h2>
                 </a>
