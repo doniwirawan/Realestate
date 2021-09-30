@@ -143,11 +143,16 @@ Home
                                 <h2 class="card-title-a">
                                     <a href="/realestate/{{$item->slug}}">{{$item->name}}</a>
                                 </h2>
+                                @if ($item->sold >=1)
+                                    <p class="sold-info">SOLD</p>
+                                @endif
+
                             </div>
                             <div class="card-body-a">
                                 <div class="price-box d-flex">
                                     <span class="price-a">{{$item->status}} | IDR @money($item->price_usd)</span>
                                 </div>
+                                
                                 <a href="/realestate/{{$item->slug}}" class="link-a">Click here to view
                                     <span class="ion-ios-arrow-forward"></span>
                                 </a>

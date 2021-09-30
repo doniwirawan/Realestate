@@ -2099,3 +2099,11 @@ small.rounded{
   background: rgba(255, 255, 255, 0.078);
 }
 
+.sold-info{
+  color: white;
+  text-align: center;
+  width: 20%;
+  background:rgba(255, 0, 0, 0.749);
+  border-radius: 5px;
+}
+

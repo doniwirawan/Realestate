@@ -58,6 +58,9 @@ Real Estate
                                 <h2 class="card-title-a">
                                     <a href="/realestate/{{$item->slug}}">{{$item->name}}</a>
                                 </h2>
+                                 @if ($item->sold >=1)
+                                    <p class="sold-info">SOLD</p>
+                                @endif
                             </div>
                             <div class="card-body-a">
                                 <div class="price-box d-flex">
