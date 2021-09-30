@@ -2082,3 +2082,11 @@ small.rounded{
   transition: all 1s;
   transform: scale(1.2);
 }
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip{
+  background: rgba(255, 255, 255, 0.441);
+}
+.leaflet-popup-content .card{
+  background: rgba(255, 255, 255, 0.078);
+}
