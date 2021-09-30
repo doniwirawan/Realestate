@@ -19,6 +19,8 @@
                 </div>
             </div>
         </div>
-        <div id="map2"></div>
+        <a href="/maps">
+            <div id="map2"></div>
+        </a>
     </div>
 </section>
