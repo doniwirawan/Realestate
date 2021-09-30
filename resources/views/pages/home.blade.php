@@ -299,6 +299,54 @@ Home
     </div>
 </section>
 
-  @include('includes.maps')
+
+{{-- card --}}
+<section class="mt-5">
+    <div class="container mt-5">
+         <div class="row mt-5">
+            <div class="col-md-12 mt-5">
+                <div class="title-wrap d-flex justify-content-between">
+                    <div class="title-box">
+                        <h2 class="title-a">Properties based on Type</h2>
+                    </div>
+                    <div class="title-link">
+                        <a href="/area/all">All Type
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/category/land">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/02/13/53/field-5121505_960_720.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Land</h2>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/category/hotel">
+                    <img src="frontend/img/hotel.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Hotel</h2>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 position-relative card-area ">
+                <a href="/category/villa">
+                    <img src="frontend/img/project-1.jpg"
+                    alt="" class="img-fluid">
+                <h2 class="position-absolute text-absolute text-light">Villa</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@include('includes.maps')
 
 @endsection
