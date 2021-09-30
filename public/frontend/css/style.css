@@ -1661,6 +1661,10 @@ footer .credits {
   color: #ffffff;
 }
 
+.navbar-brand img {
+    height: 80px;
+}
+
 @media (min-width: 576px) {
   .intro .intro-title {
     font-size: 3.5rem;
@@ -1969,9 +1973,13 @@ footer .credits {
   }
 }
 
+
 @media (max-width: 767px) {
   .text-brand {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
+  }
+  .navbar-brand img {
+      height: 45px;
   }
 
   .section-t8 {
@@ -2090,3 +2098,4 @@ small.rounded{
 .leaflet-popup-content .card{
   background: rgba(255, 255, 255, 0.078);
 }
+

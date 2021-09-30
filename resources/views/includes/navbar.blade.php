@@ -11,7 +11,19 @@
              <span></span>
              <span></span>
          </button>
-         <a class="navbar-brand text-brand" href="/">I P<span class="color-b"> H</span></a>
+         {{-- opsi 1 --}}
+         {{-- <a class="navbar-brand text-brand" href="/">
+            <img src="{{url('./frontend/img/favicon.png')}}" alt="">
+        </a> --}}
+
+        {{-- opsi 2 --}}
+         <a class="navbar-brand text-brand" href="/">
+            <img src="{{url('./frontend/img/favicon2.png')}}" alt="">
+            Indonesia Property<span class="color-b"> Hub</span></a>
+
+         {{-- opsi 3 --}}
+         {{-- <a class="navbar-brand text-brand" href="/">I P<span class="color-b"> H</span></a> --}}
+
          <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
              data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
              <span class="fa fa-search" aria-hidden="true"></span>
