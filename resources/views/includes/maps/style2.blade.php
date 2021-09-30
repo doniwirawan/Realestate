@@ -44,4 +44,14 @@
         right: 10px;
         top: 10px;
     }
+
+    @media (max-width: 768px) {
+        #map2 {
+            margin-top: 100px;
+            height: 60vh;
+            max-width: 96%;
+            margin: auto;
+        }
+    }
+
 </style>
