@@ -37,16 +37,10 @@
                 <div class="card-body p-0 py-2">
                     <div class="title-price d-flex justify-content-between">
                     <h5 class="card-title font-weight-bold">${name}</h5>
-                   
-
                       ${sold >= 1? `<h6 class="text-light pt-1 sold-info"></i>SOLD</h6>`:` <h6 class="text-warning pt-1"><i class="fas fa-money-bill-alt"></i> IDR ${currency(price)}</h6>`}   
-
                     </div>
-                    
                     ${sold >= 1? `<small class="bg-danger  p-1 rounded text-light">SOLD</small>`:`<small class="bg-secondary p-1 rounded text-light">${type}</small>
                     <small class="bg-dark p-1 rounded text-light">${status}</small>`}
-                    
-
                     <div class="feature d-flex  border-bottom">
                         <p class="px-1 border-right"><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>
                         <p class="px-1 border-right"><i class="fas fa-bath mr-2"></i>${bath}</p>
