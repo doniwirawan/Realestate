@@ -23,7 +23,7 @@
             <td>{{$realestate->name}}</td>
             <td>
                 @foreach(explode(',', $realestate->img) as $f)
-                <img src="{{URL::asset("storage/img/{$f}")}}" alt="" class="img-fluid table-img rounded">
+                <img src="{{URL::asset("public/img/{$f}")}}" alt="" class="img-fluid table-img rounded">
                 @endforeach
             </td>
             <td>@money($realestate->price_usd)</td>

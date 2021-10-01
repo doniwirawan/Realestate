@@ -33,7 +33,7 @@
                 marker.bindPopup(
                     `
            <div class="card  mt-3" style="width: 14rem;">
-                <img src="storage/img/${link}" class="card-img-top" alt="${name}">
+                <img src="public/img/${link}" class="card-img-top" alt="${name}">
                 <div class="card-body p-0 py-2">
                     <div class="title-price d-flex justify-content-between">
                     <h5 class="card-title font-weight-bold">${name}</h5>
