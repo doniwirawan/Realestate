@@ -42,10 +42,10 @@
                     ${sold >= 1? `<small class="bg-danger  p-1 rounded text-light">SOLD</small>`:`<small class="bg-secondary p-1 rounded text-light">${type}</small>
                     <small class="bg-dark p-1 rounded text-light">${status}</small>`}
                     <div class="feature d-flex  border-bottom">
-                        <p class="px-1 border-right"><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>
-                        <p class="px-1 border-right"><i class="fas fa-bath mr-2"></i>${bath}</p>
-                        <p class="px-1 border-right"><i class="fas fa-bed mr-2"></i>${bed}</p>
-                        <p class="px-1 "><i class="fas fa-swimmer mr-2"></i>${pool}</p>
+                         ${size !== null? ` <p class="px-1 border-right"><i class="fas fa-ruler-horizontal mr-2"></i>${size} SQM</p>`:``} 
+                        ${bath !== null ? `  <p class="px-1 border-right"><i class="fas fa-bath mr-2"></i>${bath}</p>`:``}   
+                         ${bed !== null ? `  <p class="px-1 border-right"><i class="fas fa-bed mr-2"></i>${bed}</p>`:``}   
+                        ${pool !== null ? `<p class="px-1 "><i class="fas fa-swimmer mr-2"></i>${pool}</p>`:``} 
                     </div>
                     <p class="card-text mt-2 pb-2 border-bottom">${desc}</p>
                     <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy%20${name}" class="text-white btn btn-primary"><i class="fab fa-whatsapp"></i> Contact Us</a>
