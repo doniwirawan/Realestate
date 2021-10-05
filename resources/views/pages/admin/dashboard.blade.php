@@ -32,9 +32,9 @@
 
             <td>
                 @if ($realestate->sold == 0)
-                <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-primary">mark as sold</button></form>
+                <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success">mark as sold</button></form>
                 @else
-                    <p class="bg-danger text-center text-light rounded">SOLD</p>
+                    <p class="bg-success text-center text-light rounded">SOLD</p>
                 @endif
             </td>
            
