@@ -46,9 +46,28 @@ Admin Dashboard
                 <option value="villa">Villa</option>
             </select>
         </div>
-        <label for="area">Area</label>
+        {{-- <label for="area">Area</label>
         <input type="text" class="form-control" name="area" placeholder="Ubud" id="area" value="{{$realestate->area}}"
-            required>
+        required> --}}
+        {{-- area --}}
+        <div class="form-group">
+            <label for="area">Area</label>
+            <select class="form-control" id="area" name="area" value="{{$realestate->area}}"
+                required>
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="kuta">kuta</option>
+                <option value="ubud">ubud</option>
+                <option value="canggu">canggu</option>
+                <option value="nusa dua">nusa dua</option>
+                <option value="jimbaran">jimbaran</option>
+                <option value="sanur">sanur</option>
+                <option value="nusa penida">nusa penida</option>
+                <option value="north bali">north bali</option>
+                <option value="west bali">west bali</option>
+                <option value="east bali">east bali</option>
+            </select>
+        </div>
+        {{-- area end --}}
         <div class="form-group">
             <label for="exampleFormControlSelect2">Status</label>
             <select class="form-control" id="exampleFormControlSelect2" name="status" value="{{$realestate->status}}"
