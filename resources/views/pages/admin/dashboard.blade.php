@@ -32,16 +32,16 @@
 
             <td>
                 @if ($realestate->sold == 0)
-                <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success">mark as sold</button></form>
+                <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success" id="sold">mark as sold</button></form>
                 @else
                     <p class="bg-success text-center text-light rounded">SOLD</p>
                 @endif
             </td>
            
             <td>
-                <form method="GET" action="/realestate/edit/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-primary">Edit</button></form>
+                <form method="GET" action="/realestate/edit/{{$realestate->id}}"  class="m-1" name="myForm"><button type="submit" class="btn btn-primary" id="edit">Edit</button></form>
 
-                 <form method="GET" action="/realestate/delete/{{$realestate->id}}" class="m-1"><button type="submit" class="btn btn-danger">Delete</button></form>
+                 <form method="GET" action="/realestate/delete/{{$realestate->id}}" class="m-1" name="myForm"><button type="submit" class="btn btn-danger" id="delete">Delete</button></form>
             </td>
         </tr>
         @endforeach
