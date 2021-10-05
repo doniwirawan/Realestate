@@ -7,6 +7,27 @@ Admin Dashboard
 <div class="col-lg-6 col-md-12">
     <form method="POST" action="/add" class="mt-4 py-5" enctype="multipart/form-data">
         {{ csrf_field() }}
+        {{-- menampilkan error validasi --}}
+        @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+
+        @if(Session::has('success'))
+        <div class="alert alert-success">
+            {{ Session::get('success') }}
+            @php
+            Session::forget('success');
+            @endphp
+        </div>
+        @endif
+
+
         <label for="name">Name</label>
         <input type="text" class="form-control" name="name" id="name" placeholder="Realestate Name Here" required>
         <div class="form-group mt-2">

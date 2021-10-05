@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -65,6 +66,32 @@ class AdminController extends Controller
 
     public function update(Request $request)
     {
+         $rules = [
+            'name'  => 'required',
+            'file'  => 'image|mimes:jpeg,png,jpg,gif,svg|max:3048',
+            'slug'  => 'unique:realestate',
+            'area'  => 'required',
+            'desc'  => 'required',
+            'size'  => 'required|numeric',
+            'location'  => 'required',
+            'price_usd'  => 'required|numeric',
+            'beds'  => 'numeric',
+            'baths'  => 'numeric',
+            'pools'  => 'numeric',
+            'status'  => 'required',
+            'type'  => 'required',
+        ];
+
+        $messages = [
+            'name.required' => 'Name required.',
+            'file.max' => 'File Max 3048Mb.',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput($request->all());
+        }
 
         if ($request->file('file')) {
             $filex = $request->file('file');
@@ -86,7 +113,7 @@ class AdminController extends Controller
                 'baths' => $request->baths,
                 'pools' => $request->pools,
                 'status' => $request->status,
-                'type' => $request->typeku,
+                'type' => $request->type,
             ]);
 
         }else{
@@ -103,17 +130,44 @@ class AdminController extends Controller
             'baths' => $request->baths,
             'pools' => $request->pools,
             'status' => $request->status,
-            'type' => $request->typeku,
+            'type' => $request->type,
             
            ]);
 
         }
 
-        return redirect('/admin');
+        return back()->with('success', 'Realestate edited successfully.');
     }
 
     public function add(Request $request)
     {
+        $rules = [
+            'name'  => 'required',
+            'file'  => 'image|mimes:jpeg,png,jpg,gif,svg|max:3048',
+            'slug'  => 'unique:realestate',
+            'area'  => 'required',
+            'desc'  => 'required',
+            'size'  => 'required|numeric',
+            'location'  => 'required|unique:realestate',
+            'price_usd'  => 'required|numeric',
+            'beds'  => 'numeric',
+            'baths'  => 'numeric',
+            'pools'  => 'numeric',
+            'status'  => 'required',
+            'type'  => 'required',
+        ];
+
+        $messages = [
+            'name.required' => 'Name required.',
+            'file.max' => 'File Max 3048Mb.',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput($request->all());
+        }
+
         if($request->file('file')){
 
             $file = $request->file('file');
@@ -157,6 +211,6 @@ class AdminController extends Controller
             ]);
         }
 
-        return redirect('/admin');
+         return back()->with('success', 'Realestate added successfully.');
     }
 }
