@@ -12,6 +12,7 @@
             <th scope="col">Images</th>
             <th scope="col">Price</th>
             <th scope="col">Category</th>
+            <th scope="col">Sold?</th>
             <th scope="col">Option</th>
         </tr>
     </thead>
@@ -28,6 +29,15 @@
             </td>
             <td>@money($realestate->price_usd)</td>
             <td>{{$realestate->type}}</td>
+
+            <td>
+                @if ($realestate->sold == 0)
+                <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-primary">mark as sold</button></form>
+                @else
+                    <p class="bg-danger text-center text-light rounded">SOLD</p>
+                @endif
+            </td>
+           
             <td>
                 <form method="GET" action="/realestate/edit/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-primary">Edit</button></form>
 

@@ -54,6 +54,15 @@ class AdminController extends Controller
         return view('pages.admin.edit', ['realestate' => $realestate]);
     }
 
+    public function sold($id)
+    {
+        DB::table('realestate')->where('id', $id)->update([
+            'sold' => 1,
+        ]);
+
+        return redirect('/admin');
+    }
+
     public function update(Request $request)
     {
 
