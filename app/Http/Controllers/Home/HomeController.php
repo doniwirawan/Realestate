@@ -106,6 +106,16 @@ class HomeController extends Controller
     {
         return view('pages.team');
     }
+    
+    public function partnership()
+    {
+        return view('pages.partnership');
+    }
+
+    public function philosophy()
+    {
+        return view('pages.philosophy');
+    }
 
     // public function realestate()
     // {
