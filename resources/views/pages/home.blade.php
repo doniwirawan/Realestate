@@ -352,6 +352,6 @@ Home
 
 
 
-@include('includes.maps')
+{{-- @include('includes.maps') --}}
 
 @endsection

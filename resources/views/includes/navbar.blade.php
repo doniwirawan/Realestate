@@ -11,18 +11,11 @@
              <span></span>
              <span></span>
          </button>
-         {{-- opsi 1 --}}
-         {{-- <a class="navbar-brand text-brand" href="/">
-            <img src="{{url('./frontend/img/favicon.png')}}" alt="">
-        </a> --}}
 
         {{-- opsi 2 --}}
          <a class="navbar-brand text-brand" href="/">
             <img src="{{url('./frontend/img/favicon2.png')}}" alt="">
             Indonesia Property<span class="color-b"> Hub</span></a>
-
-         {{-- opsi 3 --}}
-         {{-- <a class="navbar-brand text-brand" href="/">I P<span class="color-b"> H</span></a> --}}
 
          <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
              data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
@@ -30,12 +23,39 @@
          </button>
          <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
              <ul class="navbar-nav">
-                 <li class="nav-item">
+
+                 {{-- <li class="nav-item">
                      <a class="nav-link  {{ request()->is('/') ? 'active' : '' }} " href="/">Home</a>
-                 </li>
-                 <li class="nav-item ">
+                 </li> --}}
+
+                 {{-- <li class="nav-item ">
                      <a class="nav-link {{ request()->is('about') ? 'active' : '' }} " href="/about">About</a>
+                 </li> --}}
+
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="land" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Land
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="land">
+                         <a class="dropdown-item" href="/category/all ">Freehold</a>
+                         <a class="dropdown-item" href="/category/hotel">Leasehold</a>
+                     </div>
                  </li>
+
+
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="properties" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Properties
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="properties">
+                         <a class="dropdown-item" href="/category/all ">Freehold</a>
+                         <a class="dropdown-item" href="/category/hotel">Leasehold</a>
+                     </div>
+                 </li>
+                 
+
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,12 +68,28 @@
                          <a class="dropdown-item" href="/category/villa">Villa for Sale</a>
                      </div>
                  </li>
+
                  <li class="nav-item  ">
                      <a class="nav-link  {{ request()->is('maps') ? 'active' : '' }}" href="/maps">Maps</a>
                  </li>
-                 <li class="nav-item ">
+
+                 {{-- <li class="nav-item ">
                      <a class="nav-link  {{ request()->is('contact') ? 'active' : '' }} " href="/contact">Contact</a>
+                 </li> --}}
+
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="/" id="about" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                         About Us
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="about">
+                         <a class="dropdown-item" href="/team">The Team</a>
+                         <a class="dropdown-item" href="/philosophy">Our Philosophy</a>
+                         <a class="dropdown-item" href="/contact">Contact Us</a>
+                     </div>
                  </li>
+
+
              </ul>
          </div>
          <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
