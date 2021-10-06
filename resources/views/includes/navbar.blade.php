@@ -87,7 +87,7 @@
                          Unique Deals
                      </a>
                      <div class="dropdown-menu" aria-labelledby="uniq">
-                         <a class="dropdown-item" href="/hotel">Hotels</a>
+                         <a class="dropdown-item" href="/category/hotel">Hotels</a>
                          <a class="dropdown-item" href="/partnership">Shared partnership</a>
                      </div>
                  </li>

@@ -53,6 +53,31 @@ class HomeController extends Controller
         
     }
 
+    public function multi(Request $request)
+    {
+        $type = $request->type;
+        $status = $request->status;
+        if($type === 'properties'){
+            $realestate = DB::table('realestate')
+            ->where('status', $status)
+            ->paginate(12);
+
+            return view('pages.realestate')->with([
+                'realestate' => $realestate
+            ]);
+        }else{
+            $realestate = DB::table('realestate')
+            ->where('type', $type)
+            ->where('status', $status)
+            ->paginate(12);
+
+            return view('pages.realestate')->with([
+                'realestate' => $realestate
+            ]);
+        }
+        
+    }
+
 
     public function area(Request $request)
     {
