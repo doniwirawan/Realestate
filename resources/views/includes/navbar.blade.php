@@ -99,6 +99,7 @@
                          About Us
                      </a>
                      <div class="dropdown-menu" aria-labelledby="about">
+                         <a class="dropdown-item" href="/about">About Us</a>
                          <a class="dropdown-item" href="/team">The Team</a>
                          <a class="dropdown-item" href="/philosophy">Our Philosophy</a>
                          <a class="dropdown-item" href="/contact">Contact Us</a>
