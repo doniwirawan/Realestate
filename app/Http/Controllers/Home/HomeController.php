@@ -77,6 +77,11 @@ class HomeController extends Controller
         return view('pages.about');
     }
 
+    public function team()
+    {
+        return view('pages.team');
+    }
+
     // public function realestate()
     // {
     //     $realestate = DB::table('realestate')->paginate(12);

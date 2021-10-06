@@ -31,6 +31,8 @@ Route::get('/search',[HomeController::class, 'search'])->name('realestateSearch'
 
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
+Route::get('/team',[HomeController::class, 'team'])->name('team');
+
 Route::get('/maps',[HomeController::class, 'maps'])->name('maps');
 
 Route::get('/category/{type}',[HomeController::class, 'type'])->name('showType');

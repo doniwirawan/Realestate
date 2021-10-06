@@ -12,10 +12,14 @@
              <span></span>
          </button>
 
+        {{-- opsi 1 --}}
+         {{-- <a class="navbar-brand text-brand" href="/">
+            <img src="{{url('./frontend/img/favicon2.png')}}" alt="">
+            Indonesia Property<span class="color-b"> Hub</span></a> --}}
         {{-- opsi 2 --}}
          <a class="navbar-brand text-brand" href="/">
             <img src="{{url('./frontend/img/favicon2.png')}}" alt="">
-            Indonesia Property<span class="color-b"> Hub</span></a>
+            </a>
 
          <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
              data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
@@ -38,8 +42,8 @@
                          Land
                      </a>
                      <div class="dropdown-menu" aria-labelledby="land">
-                         <a class="dropdown-item" href="/category/all ">Freehold</a>
-                         <a class="dropdown-item" href="/category/hotel">Leasehold</a>
+                         <a class="dropdown-item" href="/category/land/freehold ">Freehold</a>
+                         <a class="dropdown-item" href="/category/land/leasehold">Leasehold</a>
                      </div>
                  </li>
 
@@ -50,12 +54,12 @@
                          Properties
                      </a>
                      <div class="dropdown-menu" aria-labelledby="properties">
-                         <a class="dropdown-item" href="/category/all ">Freehold</a>
-                         <a class="dropdown-item" href="/category/hotel">Leasehold</a>
+                         <a class="dropdown-item" href="/category/properties/freehold ">Freehold</a>
+                         <a class="dropdown-item" href="/category/properties/leasehold">Leasehold</a>
                      </div>
                  </li>
                  
-
+{{-- 
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,7 +71,7 @@
                          <a class="dropdown-item" href="/category/land">Land for Sale</a>
                          <a class="dropdown-item" href="/category/villa">Villa for Sale</a>
                      </div>
-                 </li>
+                 </li> --}}
 
                  <li class="nav-item  ">
                      <a class="nav-link  {{ request()->is('maps') ? 'active' : '' }}" href="/maps">Maps</a>
@@ -76,6 +80,18 @@
                  {{-- <li class="nav-item ">
                      <a class="nav-link  {{ request()->is('contact') ? 'active' : '' }} " href="/contact">Contact</a>
                  </li> --}}
+
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="/" id="uniq" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                         Unique Deals
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="uniq">
+                         <a class="dropdown-item" href="/hotel">Hotels</a>
+                         <a class="dropdown-item" href="/partnership">Shared partnership</a>
+                     </div>
+                 </li>
+
 
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="/" id="about" role="button"
