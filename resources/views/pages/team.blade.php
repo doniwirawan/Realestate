@@ -389,7 +389,7 @@ Team
           </div>
         </div>
       </div>
-      <div class="row">
+      {{-- <div class="row">
         <div class="col-sm-12">
           <nav class="pagination-a">
             <ul class="pagination justify-content-end">
@@ -416,7 +416,7 @@ Team
           </nav>
         </div>
       </div>
-    </div>
+    </div> --}}
   </section>
   <!--/ Agents Grid End /-->
 
