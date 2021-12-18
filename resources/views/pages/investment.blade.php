@@ -35,132 +35,22 @@ Investment Guide
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="title-wrap d-flex justify-content-between">
+          <div class="title-wrap ">
             <div class="title-box">
-              <h2 class="title-a">Download Our Ebook</h2>
+              <h2 class="title-a text-center">Download Our Ebook Below</h2>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-d img-fluid">
-            </div>
-            <div class="card-overlay card-overlay-hover">
-              <div class="card-header-d">
-                <div class="card-title-d align-self-center">
-                  <h3 class="title-d">
-                    <a href="agent-single.html" class="link-two">Margaret Sotillo
-                      <br> Escala</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card-body-d">
-                <p class="content-d color-text-a">
-                  Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                </p>
-                <div class="info-agents color-a">
-                  <p>
-                    <strong>Phone: </strong> +54 356 945234</p>
-                  <p>
-                    <strong>Email: </strong> agents@example.com</p>
-                </div>
-              </div>
-              <div class="card-footer-d">
-                <div class="socials-footer d-flex justify-content-center">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-dribbble" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6 p-5">
+          <img class="w-100" src="{{url('./frontend/img/ebookeng.jpg')}}" alt="emasestate ebook english version">
+          <a href="" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in English</a>
         </div>
         
-        <div class="col-md-6">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-d img-fluid">
-            </div>
-            <div class="card-overlay card-overlay-hover">
-              <div class="card-header-d">
-                <div class="card-title-d align-self-center">
-                  <h3 class="title-d">
-                    <a href="agent-single.html" class="link-two">Emma Toledo
-                      <br> Cascada</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card-body-d">
-                <p class="content-d color-text-a">
-                  Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                </p>
-                <div class="info-agents color-a">
-                  <p>
-                    <strong>Phone: </strong> +54 356 945234</p>
-                  <p>
-                    <strong>Email: </strong> agents@example.com</p>
-                </div>
-              </div>
-              <div class="card-footer-d">
-                <div class="socials-footer d-flex justify-content-center">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-dribbble" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6 p-5">
+          <img class="w-100" src="{{url('./frontend/img/ebookfr.jpg')}}" alt="emasestate ebook france version">
+          <a href="" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in France</a>
         </div>
       </div>
     </div>

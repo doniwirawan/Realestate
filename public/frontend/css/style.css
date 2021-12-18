@@ -2133,3 +2133,7 @@ small.rounded{
 label{
   font-weight: bold;
 }
+
+.btn-primary{
+  background-color: #1F6F8B;
+}
