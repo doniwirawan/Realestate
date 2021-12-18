@@ -48,7 +48,7 @@ Investment Guide
           <a href="" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in English</a>
         </div>
         
-        <div class="col-md-6 p-5">
+        <div class="col-md-6 p-5 mt-md-5 mt-lg-0">
           <img class="w-100" src="{{url('./frontend/img/ebookfr.jpg')}}" alt="emasestate ebook france version">
           <a href="" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in France</a>
         </div>

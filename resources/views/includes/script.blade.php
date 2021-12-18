@@ -10,3 +10,4 @@
   <script src="{{url('frontend/contactform/contactform.js')}}"></script>
   <!-- Template Main Javascript File -->
   <script src="{{url('./frontend/js/main.js')}}"></script>
+  <script src="{{url('./frontend/js/script.js')}}"></script>

@@ -29,8 +29,8 @@ Real Estate
                     <div class="form-group col-3">
                         <label for="" class="font-weight-bold">Price</label>
                         <br>
-                        <input type="range" class="col-12 mt-3" min="0" max="999999999999999">
-                        <span class="input-range-number">IDR 0</span>
+                        <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range">
+                        <span id="input-range-output" class="input-range-output">0</span>
                     </div>
                     <div class="form-group col-3 pt-2">
                         <button type="submit" class="btn btn-search text-light mt-4"><i class="fas fa-search pr-2"></i>
