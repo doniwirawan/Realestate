@@ -68,7 +68,7 @@ class AdminController extends Controller
     {
          $rules = [
             'name'  => 'required',
-            'file'  => 'image|mimes:jpeg,png,jpg,gif,svg|max:3048',
+            'file'  => 'image|mimes:jpeg,png,jpg,gif,svg|max:1000000',
             'slug'  => 'unique:realestate',
             'area'  => 'required',
             'desc'  => 'required',
@@ -143,7 +143,7 @@ class AdminController extends Controller
     {
         $rules = [
             'name'  => 'required',
-            'file'  => 'image|mimes:jpeg,png,jpg,gif,svg|max:3048',
+            'file'  => 'image|mimes:jpeg,png,jpg,gif,svg|max:10000000',
             'slug'  => 'unique:realestate',
             'area'  => 'required',
             'desc'  => 'required',

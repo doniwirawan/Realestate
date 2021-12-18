@@ -26,8 +26,8 @@
   @include('includes.navbar')
   @yield('content')
   @include('includes.footer')
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+  {{-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div> --}}
   @include('includes.script')
 </body>
 </html>

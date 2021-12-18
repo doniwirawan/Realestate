@@ -5,7 +5,13 @@
             <div class="col-sm-12 col-md-4">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a text-brand">Indonesia Property <span class="color-b">Hub</span></h3>
+                        {{-- <div class="row"> --}}
+
+                            {{-- <h3 class="w-title-a navbar-brand text-brand">
+                                <img src="{{url('./frontend/img/favicon.png')}}" alt="">
+                            </h3> --}}
+                            <h3 class="w-title-a text-brand">Emas<span class="color-b"> Estate</span></h3>
+                        {{-- </div> --}}
                     </div>
                     <div class="w-body-a">
                         <p class="w-text-a color-text-a">
@@ -14,8 +20,8 @@
                     </div>
                     <div class="w-footer-a">
                         <ul class="list-unstyled">
-                            <a class="mb-1" href="mailto:marketing@indonesiapropertyhub.com?subject=Feedback&body=Message">Email.
-                                <span class="color-a">marketing@indonesiapropertyhub.com</span>
+                            <a class="mb-1" href="mailto:marketing@emasestate.com?subject=Feedback&body=Message">Email.
+                                <span class="color-a">info@emasestate.com</span>
                             </a>
                             <br>
                             <a class="mb-1" href="https://wa.me/6282146333864">Phone.
@@ -25,13 +31,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-sm-12 col-md-4 section-md-t3 ">
+            <div class="col-sm-12 col-md-4 section-md-t3 mt-4 pt-3">
                 <div class="widget-a">
                     <div class="w-header-a">
-                        <h3 class="w-title-a navbar-brand text-brand">
+                        {{-- <h3 class="w-title-a navbar-brand text-brand">
                             <img src="{{url('./frontend/img/favicon.png')}}" alt="">
-                        </h3>
+                        </h3> --}}
                     </div>
                     <div class="w-body-a">
                         <div class="w-body-a">
@@ -53,7 +58,22 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="col-md-4 mt-4">
+                <div class="container">
+                    <form method="POST" action="/newsletter">
+                        <div class="form-group col-12 ">
+                            <label for="" class="font-weight-bold color-b">Subscribe to our newsletter</label>
+                            <div class="d-flex flex-row">
+                                <input type="email" class="form-control" placeholder="your@email.com">
+                                <button type="submit" class="btn btn-search text-white">Subscribe</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>
@@ -62,7 +82,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <nav class="nav-footer">
+                {{-- <nav class="nav-footer">
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="/">Home</a>
@@ -80,7 +100,7 @@
                             <a href="/maps">Maps</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> --}}
                 <div class="socials-a">
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -103,7 +123,7 @@
                 <div class="copyright-footer">
                     <p class="copyright color-text-a">
                         &copy; Copyright
-                        <span class="color-a">Indonesia Property Hub</span> part of SDS All Rights Reserved.
+                        <span class="color-a">Emas Estate</span> part of SDS All Rights Reserved.
                     </p>
                 </div>
             </div>

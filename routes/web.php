@@ -43,6 +43,7 @@ Route::get('/category/{type}',[HomeController::class, 'type'])->name('showType')
 
 Route::get('category/{type}/{status}',[HomeController::class, 'multi'])->name('multi');
 
+
 Route::get('/area/{area}',[HomeController::class, 'area'])->name('showArea');
 
 

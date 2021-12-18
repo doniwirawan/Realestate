@@ -1,6 +1,6 @@
  <!--/ Nav Star /-->
  <a href="https://wa.me/6282146333864" target="_blank" rel="noopener noreferrer"
-     class="whatsapp-button btn-primary text-center d-flex align-items-center justify-content-center">
+     class="whatsapp-button text-center d-flex align-items-center justify-content-center">
      <i class="fa fa-whatsapp fa-3x"></i>
  </a>
  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
@@ -36,7 +36,7 @@
                      <a class="nav-link {{ request()->is('about') ? 'active' : '' }} " href="/about">About</a>
                  </li> --}}
 
-                 <li class="nav-item dropdown">
+                 {{-- <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="land" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Land
@@ -45,19 +45,20 @@
                          <a class="dropdown-item" href="/category/land/freehold ">Freehold</a>
                          <a class="dropdown-item" href="/category/land/leasehold">Leasehold</a>
                      </div>
-                 </li>
+                 </li> --}}
 
 
-                 <li class="nav-item dropdown">
+                 {{-- <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="properties" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Properties
                      </a>
                      <div class="dropdown-menu" aria-labelledby="properties">
-                         <a class="dropdown-item" href="/category/properties/freehold ">Freehold</a>
-                         <a class="dropdown-item" href="/category/properties/leasehold">Leasehold</a>
+                         <a class="dropdown-item" href="/category/villa">Villas</a>
+                         <a class="dropdown-item" href="/category/hotel">Hotels</a>
+                         <a class="dropdown-item" href="/category/all">Shares Ownership</a>
                      </div>
-                 </li>
+                 </li> --}}
                  
 {{-- 
                  <li class="nav-item dropdown">
@@ -74,13 +75,19 @@
                  </li> --}}
 
                  <li class="nav-item  ">
+                     <a class="nav-link  {{ request()->is('land') ? 'active' : '' }}" href="/land">Land</a>
+                 </li>
+                 <li class="nav-item  ">
                      <a class="nav-link  {{ request()->is('maps') ? 'active' : '' }}" href="/maps">Maps</a>
+                 </li>
+                 <li class="nav-item  ">
+                     <a class="nav-link  {{ request()->is('investment') ? 'active' : '' }}" href="/investment">Investment Guide</a>
                  </li>
 
                  {{-- <li class="nav-item ">
                      <a class="nav-link  {{ request()->is('contact') ? 'active' : '' }} " href="/contact">Contact</a>
                  </li> --}}
-
+{{-- 
                  <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="/" id="uniq" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -90,10 +97,10 @@
                          <a class="dropdown-item" href="/category/hotel">Hotels</a>
                          <a class="dropdown-item" href="/partnership">Shared partnership</a>
                      </div>
-                 </li>
+                 </li> --}}
 
 
-                 <li class="nav-item dropdown">
+                 {{-- <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="/" id="about" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                          About Us
@@ -104,6 +111,10 @@
                          <a class="dropdown-item" href="/philosophy">Our Philosophy</a>
                          <a class="dropdown-item" href="/contact">Contact Us</a>
                      </div>
+                 </li> --}}
+
+                 <li class="nav-item ">
+                     <a class="nav-link  {{ request()->is('about') ? 'active' : '' }} " href="/about">About Us</a>
                  </li>
 
 

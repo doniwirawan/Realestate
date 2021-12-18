@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title')
 @foreach ($single as $item)
-    {{$item->name}}
+{{$item->name}}
 @endforeach
 @endsection
 @section('content')
@@ -45,25 +45,72 @@
                     </div>
                 </div>
                 <div class="row justify-content-between">
+
+                    <div class="col-md-7 col-lg-7 section-md-t3">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="title-box-d">
+                                    <h3 class="title-d">Property Description</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-description">
+                            <p class="description color-text-a">
+                                {{$item->desc}}
+                                <br>
+                                <br>
+                                For sale a piece of vacant land on the coast of Klecung, Tabanan. With views of the sea,
+                                rice fields and mountains, a safe, comfortable, and calm atmosphere. Very suitable for a
+                                villa / investment or a place to rest
+                                <br>
+                                <br>
+                                <br>
+
+
+                                Specification:
+                                <br>
+                                <br>
+
+                                - Area: 5400m2 / 54 are
+                                <br>
+                                - Ground contour: flat
+                                <br>
+                                - Freehold
+                                <br>
+                                - 700 m to the beach
+                                <br>
+                                - 200 m from the main road
+                                <br>
+                                - 27 km/1hour from W hotle seminyak
+                                <br>
+                                - 20 km/45 min from the center of Canggu
+                                <br>
+                                IDR 100,000,000
+
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="col-md-5 col-lg-4">
                         <div class="property-price d-flex justify-content-center foo">
                             <div class="card-header-c d-flex">
                                 @if ($item->sold >=1)
-                                     <div class="card-box-ico card-box-ico--danger">
+                                <div class="card-box-ico card-box-ico--danger">
                                     <span class="ion-money text-danger">SOLD</span>
                                 </div>
                                 <div class="card-title-c align-self-center">
                                     <h5 class="title-c text-danger"></h5>
                                 </div>
                                 @else
-                                     <div class="card-box-ico">
+                                <div class="card-box-ico">
                                     <span class="ion-money">IDR</span>
                                 </div>
                                 <div class="card-title-c align-self-center">
-                                    <h5 class="title-c">@money($item->price_usd)</h5>
+                                    {{-- <h5 class="title-c">@money($item->price_usd)</h5> --}}
+                                    <h5 class="title-c">@money(356000000)</h5>
                                 </div>
                                 @endif
-                               
+
                             </div>
                         </div>
                         <div class="property-summary">
@@ -78,13 +125,14 @@
                                 <ul class="list">
                                     <li class="d-flex justify-content-between">
                                         <strong>Property Code:</strong>
-                                        <span>{{$item->id}}</span>
+                                        {{-- <span>{{$item->id}}</span> --}}
+                                        <span>UBD 001 FH</span>
                                     </li>
                                     @if ($item->type)
-                                        <li class="d-flex justify-content-between">
+                                    <li class="d-flex justify-content-between">
                                         <strong>Property Type:</strong>
                                         <span>{{$item->type}}</span>
-                                      </li>
+                                    </li>
                                     @endif
                                     @if ($item->status)
                                     <li class="d-flex justify-content-between">
@@ -99,7 +147,7 @@
                                             <sup>2</sup>
                                         </span>
                                     </li>
-                                    
+
                                     @if ($item->beds)
                                     <li class="d-flex justify-content-between">
                                         <strong>Beds:</strong>
@@ -121,22 +169,11 @@
                                     </li>
                                     @endif
                                 </ul>
-                                <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy:%20{{$item->name}}" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block btn-primary h3 "><i class="fa fa-whatsapp pr-2"></i>Contact Us</a>
+                                <a href="https://wa.me/6282146333864?text=I'm%20interested%20to%20buy:%20{{$item->name}}"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-lg btn-block btn-primary h3 "><i
+                                        class="fa fa-whatsapp pr-2"></i>Contact Us</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-lg-7 section-md-t3">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="title-box-d">
-                                    <h3 class="title-d">Property Description</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="property-description">
-                            <p class="description color-text-a">
-                                {{$item->desc}}
-                            </p>
                         </div>
                     </div>
                 </div>
