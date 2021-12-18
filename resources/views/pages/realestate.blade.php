@@ -3,6 +3,44 @@
 Real Estate
 @endsection
 @section('content')
+
+{{-- search box --}}
+    <div class="search-box position-relative text-light">
+        <div class="container">
+            <form method="POST" action="/search">
+                <div class=" d-flex flex-row justify-content-around p-5">
+                    <div class="form-group col-3">
+                        <label for="" class="font-weight-bold">Type</label>
+                        <select class="custom-select" id="">
+                            <option selected>Choose...</option>
+                            <option value="land">Land</option>
+                            <option value="villa">Villa</option>
+                            <option value="hotel">Hotel</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="" class="font-weight-bold">Status</label>
+                        <select class="custom-select" id="">
+                            <option selected>Choose...</option>
+                            <option value="freehold">Freehold</option>
+                            <option value="leasehold">Leasehold</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="" class="font-weight-bold">Price</label>
+                        <br>
+                        <input type="range" class="col-12 mt-3" min="0" max="999999999999999">
+                        <span class="input-range-number">IDR 0</span>
+                    </div>
+                    <div class="form-group col-3 pt-2">
+                        <button type="submit" class="btn btn-search text-light mt-4"><i class="fas fa-search pr-2"></i>
+                            Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    {{-- end search box --}}
 <!--/ Intro Single star /-->
 <section class="intro-single">
     <div class="container">
@@ -32,6 +70,7 @@ Real Estate
 
 </section>
 <!--/ Intro Single End /-->
+
 
 <!--/ Property Grid Star /-->
 <section class="property-grid grid">

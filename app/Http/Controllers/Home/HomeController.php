@@ -29,6 +29,14 @@ class HomeController extends Controller
         ]);
     }
 
+    public function land()
+    {
+
+        $realestate = DB::table('realestate')->where('type', 'land')->paginate(12);
+
+        return view('pages.realestate')->with(['realestate' => $realestate]);
+    }
+
     public function type(Request $request)
     {
         $type = $request->type;
@@ -100,6 +108,11 @@ class HomeController extends Controller
     public function about()
     {
         return view('pages.about');
+    }
+
+    public function invest()
+    {
+        return view('pages.investment');
     }
 
     public function team()

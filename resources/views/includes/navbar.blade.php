@@ -81,7 +81,7 @@
                      <a class="nav-link  {{ request()->is('maps') ? 'active' : '' }}" href="/maps">Maps</a>
                  </li>
                  <li class="nav-item  ">
-                     <a class="nav-link  {{ request()->is('investment') ? 'active' : '' }}" href="/investment">Investment Guide</a>
+                     <a class="nav-link  {{ request()->is('investment-guide') ? 'active' : '' }}" href="/investment-guide">Investment Guide</a>
                  </li>
 
                  {{-- <li class="nav-item ">

@@ -21,6 +21,11 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/',[HomeController::class, 'index'])->name('index');
 
+Route::get('/land',[HomeController::class, 'land'])->name('land');
+
+Route::get('/investment-guide',[HomeController::class, 'invest'])->name('invest');
+
+
 Route::get('/about',[HomeController::class, 'about'])->name('about');
 
 // Route::get('/realestate',[HomeController::class, 'realestate'])->name('realestate');
@@ -33,7 +38,7 @@ Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
 Route::get('/team',[HomeController::class, 'team'])->name('team');
 
-Route::get('/partnership',[HomeController::class, 'partnership'])->name('partnership');
+// Route::get('/partnership',[HomeController::class, 'partnership'])->name('partnership');
 
 Route::get('/philosophy',[HomeController::class, 'philosophy'])->name('philosophy');
 
