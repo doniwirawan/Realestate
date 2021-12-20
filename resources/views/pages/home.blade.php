@@ -422,7 +422,7 @@ Home
 
             <!--Grid column-->
             <div class="col-md-4 mb-md-0 mb-5 mt-4">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <form id="contact-form" name="contact-form" action="" method="POST">
 
                     <!--Grid row-->
                     {{-- <div class="row"> --}}
@@ -449,7 +449,7 @@ Home
                             <div class="md-form mb-0">
                                 <label for="email" class="">Your email</label>
 
-                                <input type="text" placeholder="your@email.com" id="email" name="email" class="form-control">
+                                <input type="email" placeholder="your@email.com" id="email" name="email" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-12 mt-2">
