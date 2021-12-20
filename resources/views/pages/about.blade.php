@@ -80,10 +80,10 @@ About
 </section> --}}
 <!--/ About End /-->
 
-  <!--/ Team Star /-->
-  <section class="section-agents section-t8">
+<!--/ Team Star /-->
+<section class="section-agents section-t8">
     <div class="container">
-      {{-- <div class="row">
+        {{-- <div class="row">
         <div class="col-md-12">
           <div class="title-wrap d-flex justify-content-between">
             <div class="title-box">
@@ -92,130 +92,161 @@ About
           </div>
         </div>
       </div> --}}
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-d img-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-box-d">
+                    <div class="card-img-d">
+                        <img src="{{url('./frontend/img/ceo_indonesiapropertyhub.jpeg')}}" alt=""
+                            class="img-d img-fluid">
+                    </div>
+                    <div class="card-overlay card-overlay-hover">
+                        <div class="card-header-d">
+                            <div class="card-title-d align-self-center">
+                                <h3 class="title-d">
+                                    <a href="agent-single.html" class="link-two">Pierre Masnada
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-body-d">
+                            <p class="content-d color-text-a text-white">
+                                Pierre-Alain Masnada studied Business in the USA before running companies in the
+                                yachting space for 10 years.
+
+                                For the last 5 years, he has specialized in materializing unique real estate projects in
+                                Bali and its surrounding islands, representing more than 13+ million USD.
+
+                                Main skills: Properties due diligence - Land and villas sourcing - Construction.
+                            </p>
+                            <div class="info-agents color-a">
+                                {{-- <p>
+                                    <strong>Phone: </strong> +54 356 945234</p> --}}
+                                <p>
+                                    <strong>Email: </strong> pierremasnada@sdsbali.com</p>
+                            </div>
+                        </div>
+                        <div class="card-footer-d">
+                            <div class="socials-footer d-flex justify-content-center">
+                                <ul class="list-inline">
+                                    {{-- <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li> --}}
+                                    {{-- <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                        </a>
+                                    </li> --}}
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-overlay card-overlay-hover">
-              <div class="card-header-d">
-                <div class="card-title-d align-self-center">
-                  <h3 class="title-d">
-                    <a href="agent-single.html" class="link-two">Margaret Sotillo
-                      <br> Escala</a>
-                  </h3>
+
+            <div class="col-md-6">
+                <div class="card-box-d">
+                    <div class="card-img-d">
+                        <img src="{{url('./frontend/img/ceo_tropic_invest.jpeg')}}" alt="" class="img-d img-fluid">
+                    </div>
+                    <div class="card-overlay card-overlay-hover">
+                        <div class="card-header-d">
+                            <div class="card-title-d align-self-center">
+                                <h3 class="title-d">
+                                    <a href="agent-single.html" class="link-two">Matthieu Chauveau </a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="card-body-d">
+                            <p class="content-d color-text-a text-white">
+                                “Sail away from the safe harbor. Explore. Dream. Discover.”
+
+                                Matthieu is a French serial entrepreneur living in Bali. He is passionate about surfing
+                                and about connecting people to create meaningful and sustainable relationships and
+                                projects.
+
+                                He holds an MBA from INSEAD, voted best MBA in the world in 2021, and previously worked
+                                for 8 years for AccorHotels in finance, development, and operations.
+
+                                Main skills: Financial analysis and modeling – Projects development – Legal and
+                                compliance.
+                            </p>
+                            <div class="info-agents color-a">
+                                {{-- <p>
+                                    <strong>Phone: </strong> +54 356 945234</p> --}}
+                                <p>
+                                    <strong>Email: </strong> matthieu@tropicinvest.com</p>
+                            </div>
+                        </div>
+                        <div class="card-footer-d">
+                            <div class="socials-footer d-flex justify-content-center">
+                                <ul class="list-inline">
+                                    {{-- <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                        </a>
+                                    </li> --}}
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="link-one">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="card-body-d">
-                <p class="content-d color-text-a">
-                  Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                </p>
-                <div class="info-agents color-a">
-                  <p>
-                    <strong>Phone: </strong> +54 356 945234</p>
-                  <p>
-                    <strong>Email: </strong> agents@example.com</p>
-                </div>
-              </div>
-              <div class="card-footer-d">
-                <div class="socials-footer d-flex justify-content-center">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-dribbble" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        
-        <div class="col-md-6">
-          <div class="card-box-d">
-            <div class="card-img-d">
-              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-d img-fluid">
-            </div>
-            <div class="card-overlay card-overlay-hover">
-              <div class="card-header-d">
-                <div class="card-title-d align-self-center">
-                  <h3 class="title-d">
-                    <a href="agent-single.html" class="link-two">Emma Toledo
-                      <br> Cascada</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card-body-d">
-                <p class="content-d color-text-a">
-                  Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                </p>
-                <div class="info-agents color-a">
-                  <p>
-                    <strong>Phone: </strong> +54 356 945234</p>
-                  <p>
-                    <strong>Email: </strong> agents@example.com</p>
-                </div>
-              </div>
-              <div class="card-footer-d">
-                <div class="socials-footer d-flex justify-content-center">
-                  <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#" class="link-one">
-                        <i class="fa fa-dribbble" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!--/ Team End /-->
+</section>
+<!--/ Team End /-->
 
 
 @endsection

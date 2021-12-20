@@ -35,4 +35,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
     linkColor.forEach(l => l.addEventListener('click', colorLink))
 
     // Your code to run since DOM is loaded and ready
+
+
+    // price input on change
+    const priceInput = document.getElementById('price')
+    const priceInputValue = priceInput.value
+
+
+    // money format function
+    var formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'IDR',
+    });
+
+    // priceInput.addEventListener('change', function () {
+        // this.value = formatter.format(this.value)
+        // priceInputValue = formatter.format(this.value)
+        // this.value = '12345678'
+        // const test = formatter.format(this.value)
+        // console.log(test)
+    // })
+
 });
+
+
+
+

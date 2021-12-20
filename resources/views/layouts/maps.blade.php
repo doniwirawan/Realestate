@@ -7,8 +7,9 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <!-- Favicons -->
-    <link href="{{url('./frontend/img/favicon.png')}}" rel="icon">
-    <link href="{{url('./frontend/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{url('./frontend/img/roof.ico')}}" rel="icon">
+    {{-- <link href="{{url('./frontend/img/favicon.png')}}" rel="icon"> --}}
+    {{-- <link href="{{url('./frontend/img/apple-touch-icon.png')}}" rel="apple-touch-icon"> --}}
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css"
