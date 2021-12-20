@@ -1667,7 +1667,7 @@ footer .credits {
 }
 
 .navbar-brand img {
-    height: 40px;
+    max-height: 30px;
 }
 
 @media (min-width: 576px) {
@@ -1702,6 +1702,9 @@ footer .credits {
 }
 
 @media (min-width: 768px) {
+  .navbar-brand img {
+      max-height: 40px;
+  }
   .link-a {
     font-size: .9rem;
   }
@@ -2115,7 +2118,7 @@ small.rounded{
 
 .search-box{
   z-index: 1;
-  bottom:-90px;
+  /* bottom:-90px; */
   left: 0;
   right: 0;
   margin: 0 auto;

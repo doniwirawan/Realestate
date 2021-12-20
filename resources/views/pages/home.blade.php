@@ -35,12 +35,17 @@ Home
         </div>
         @endforeach
     </div>
-    {{-- search box --}}
-    <div class="search-box position-absolute">
+    
+</div>
+<!--/ Carousel end /-->
+
+
+{{-- search box --}}
+    <div class="search-box position-relative md-mt-5 text-light">
         <div class="container">
             <form method="POST" action="/search">
-                <div class=" d-flex flex-row justify-content-around p-5">
-                    <div class="form-group col-3">
+                <div class="col-12 row justify-content-around p-5">
+                    <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Type</label>
                         <select class="custom-select" id="">
                             <option selected>Choose...</option>
@@ -49,7 +54,7 @@ Home
                             <option value="hotel">Hotel</option>
                         </select>
                     </div>
-                    <div class="form-group col-3">
+                    <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Status</label>
                         <select class="custom-select" id="">
                             <option selected>Choose...</option>
@@ -57,13 +62,13 @@ Home
                             <option value="leasehold">Leasehold</option>
                         </select>
                     </div>
-                    <div class="form-group col-3">
+                    <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Price</label>
                         <br>
                         <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range">
                         <span id="input-range-output" class="input-range-output">0</span>
                     </div>
-                    <div class="form-group col-3 pt-2">
+                    <div class="form-group col-lg-3 col-md-12 pt-2">
                         <button type="submit" class="btn btn-search text-light mt-4"><i class="fas fa-search pr-2"></i>
                             Search</button>
                     </div>
@@ -72,10 +77,6 @@ Home
         </div>
     </div>
     {{-- end search box --}}
-</div>
-<!--/ Carousel end /-->
-
-
 
 
 <!--/ Property Star /-->
@@ -406,7 +407,7 @@ Home
 
 {{-- contact us section --}}
 <!--Section: Contact v.2-->
-<section class="mb-4  p-5">
+<section class="mb-4  p-lg-5">
 
     <div class="container contact-us-section p-4 rounded">
         <div class="row mt-4">
@@ -481,7 +482,7 @@ Home
                 </form>
 
                 <div class="text-center text-md-left mt-4">
-                    <a class="btn btn-search text-light" >Send</a>
+                    <a class="btn btn-search btn-lg btn-block text-light" >Send</a>
                 </div>
                 <div class="status"></div>
             </div>
