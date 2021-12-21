@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Validator;
+
 
 class HomeController extends Controller
 {
@@ -191,5 +193,37 @@ class HomeController extends Controller
         
 
         return view('pages.realestate')->with(['realestate' => $realestate]);
+    }
+
+    public function contactForm(Request $request)
+    {
+        $rules = [
+            'name'  => 'required',
+            'email'  => 'required|unique:realestate',
+            'subject'  => 'required',
+            'message'  => 'required',
+        ];
+
+        $messages = [
+            'name.required' => 'Name required.',
+            'email.required' => 'Email required.',
+            'subject.required' => 'subject required.',
+            'message.required' => 'message required.',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput($request->all());
+        }
+
+        DB::table('website_form')->insert([
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ]);
+
+        return back()->with('success', 'Form submitted succesfully');
     }
 }

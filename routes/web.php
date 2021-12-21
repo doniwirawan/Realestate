@@ -38,6 +38,7 @@ Route::get('/search',[HomeController::class, 'search'])->name('realestateSearch'
 
 Route::post('/search-form',[HomeController::class, 'searchForm'])->name('realestateSearchForm');
 
+Route::post('/contact-form',[HomeController::class, 'contactForm'])->name('contactForm');
 
 
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');

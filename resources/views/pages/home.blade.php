@@ -35,49 +35,49 @@ Home
         </div>
         @endforeach
     </div>
-    
+
 </div>
 <!--/ Carousel end /-->
 
 
 {{-- search box --}}
-    <div class="search-box position-relative md-mt-5 text-light">
-        <div class="container">
-            <form method="POST" action="/search-form" class="">
-                {{ @csrf_field() }}
-                <div class="col-12 row justify-content-around p-5">
-                    <div class="form-group col-lg-3 col-md-12">
-                        <label for="" class="font-weight-bold">Type</label>
-                        <select class="form-control form-control-lg form-control-a" id="" name="type">
-                            <option selected>Choose...</option>
-                            <option value="land">Land</option>
-                            <option value="villa">Villa</option>
-                            <option value="hotel">Hotel</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-lg-3 col-md-12">
-                        <label for="" class="font-weight-bold">Status</label>
-                        <select class="form-control form-control-lg form-control-a" id="" name="status">
-                            <option selected>Choose...</option>
-                            <option value="freehold">Freehold</option>
-                            <option value="leasehold">Leasehold</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-lg-3 col-md-12">
-                        <label for="" class="font-weight-bold">Price</label>
-                        <br>
-                        <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range" name="price">
-                        <span id="input-range-output" class="input-range-output">0</span>
-                    </div>
-                    <div class="form-group col-lg-3 col-md-12 pt-2">
-                        <button type="submit" class="btn btn-search text-light mt-4"><i class="fas fa-search pr-2"></i>
-                            Search</button>
-                    </div>
+<div class="search-box position-relative md-mt-5 text-light">
+    <div class="container">
+        <form method="POST" action="/search-form" class="">
+            {{ @csrf_field() }}
+            <div class="col-12 row justify-content-around p-5">
+                <div class="form-group col-lg-3 col-md-12">
+                    <label for="" class="font-weight-bold">Type</label>
+                    <select class="form-control form-control-lg form-control-a" id="" name="type">
+                        <option selected>Choose...</option>
+                        <option value="land">Land</option>
+                        <option value="villa">Villa</option>
+                        <option value="hotel">Hotel</option>
+                    </select>
                 </div>
-            </form>
-        </div>
+                <div class="form-group col-lg-3 col-md-12">
+                    <label for="" class="font-weight-bold">Status</label>
+                    <select class="form-control form-control-lg form-control-a" id="" name="status">
+                        <option selected>Choose...</option>
+                        <option value="freehold">Freehold</option>
+                        <option value="leasehold">Leasehold</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-3 col-md-12">
+                    <label for="" class="font-weight-bold">Price</label>
+                    <br>
+                    <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range" name="price">
+                    <span id="input-range-output" class="input-range-output">0</span>
+                </div>
+                <div class="form-group col-lg-3 col-md-12 pt-2">
+                    <button type="submit" class="btn btn-search text-light mt-4"><i class="fas fa-search pr-2"></i>
+                        Search</button>
+                </div>
+            </div>
+        </form>
     </div>
-    {{-- end search box --}}
+</div>
+{{-- end search box --}}
 
 
 <!--/ Property Star /-->
@@ -426,12 +426,32 @@ Home
             <div class="col-md-4 mb-md-0 mb-5 mt-4">
                 <form id="contact-form" name="contact-form" action="/contact-form" method="POST">
                     @csrf
+                    {{-- menampilkan error validasi --}}
+                    @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
+
+                    @if(Session::has('success'))
+                    <div class="alert alert-success">
+                        {{ Session::get('success') }}
+                        @php
+                        Session::forget('success');
+                        @endphp
+                    </div>
+                    @endif
+                    
                     <!--Grid row-->
                     <div class="row">
                         <!--Grid column-->
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <label for="name" class="" >Your name</label>
+                                <label for="name" class="">Your name</label>
                                 <input type="text" placeholder="Your Name" id="name" name="name" class="form-control">
                             </div>
                         </div>
@@ -440,15 +460,16 @@ Home
                         <div class="col-md-12 mt-2">
                             <div class="md-form mb-0">
                                 <label for="email" class="">Your email</label>
-
-                                <input type="email" placeholder="your@email.com" id="email" name="email" class="form-control">
+                                <input type="email" placeholder="your@email.com" id="email" name="email"
+                                    class="form-control">
                             </div>
                         </div>
                         <div class="col-md-12 mt-2">
                             <div class="md-form mb-0">
                                 <label for="subject" class="">Subject</label>
 
-                                <input type="text" id="subject" placeholder="Subject" name="subject" class="form-control">
+                                <input type="text" id="subject" placeholder="Subject" name="subject"
+                                    class="form-control">
                             </div>
                         </div>
                     </div>
@@ -468,7 +489,7 @@ Home
                 </form>
 
                 <div class="text-center text-md-left mt-4">
-                    <a class="btn btn-search btn-lg btn-block text-light" >Send</a>
+                    <a class="btn btn-search btn-lg btn-block text-light">Send</a>
                 </div>
                 <div class="status"></div>
             </div>
@@ -479,8 +500,5 @@ Home
 <!--Section: Contact v.2-->
 {{-- contact us section end here --}}
 
-
-
 {{-- @include('includes.maps') --}}
-
 @endsection
