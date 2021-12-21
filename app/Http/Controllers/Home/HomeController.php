@@ -199,7 +199,8 @@ class HomeController extends Controller
     {
         $rules = [
             'name'  => 'required',
-            'email'  => 'required|unique:realestate',
+            // 'email'  => 'required',
+            'email'  => 'required|unique:contact_form',
             'subject'  => 'required',
             'message'  => 'required',
         ];
@@ -217,13 +218,13 @@ class HomeController extends Controller
             return redirect()->back()->withErrors($validator)->withInput($request->all());
         }
 
-        DB::table('website_form')->insert([
+        DB::table('contact_form')->insert([
             'name' => $request->name,
             'email' => $request->email,
             'subject' => $request->subject,
             'message' => $request->message,
         ]);
 
-        return back()->with('success', 'Form submitted succesfully');
+        return redirect('/#contactform')->with('success', 'Form submitted succesfully');
     }
 }

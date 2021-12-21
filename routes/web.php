@@ -34,14 +34,14 @@ Route::get('/about',[HomeController::class, 'about'])->name('about');
 
 Route::get('/realestate/{slug}',[HomeController::class, 'single'])->name('realestateDetail');
 
-Route::get('/search',[HomeController::class, 'search'])->name('realestateSearch');
+// Route::get('/search',[HomeController::class, 'search'])->name('realestateSearch');
 
 Route::post('/search-form',[HomeController::class, 'searchForm'])->name('realestateSearchForm');
 
 Route::post('/contact-form',[HomeController::class, 'contactForm'])->name('contactForm');
 
 
-Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
+// Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 
 Route::get('/team',[HomeController::class, 'team'])->name('team');
 

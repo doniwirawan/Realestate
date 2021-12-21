@@ -423,8 +423,8 @@ Home
             </div>
 
             <!--Grid column-->
-            <div class="col-md-4 mb-md-0 mb-5 mt-4">
-                <form id="contact-form" name="contact-form" action="/contact-form" method="POST">
+            <div class="col-md-4 mb-md-0 mb-5 mt-4" id="contactform">
+                <form method="POST" id="contact-form" name="contact-form" action="/contact-form">
                     @csrf
                     {{-- menampilkan error validasi --}}
                     @if (count($errors) > 0)
@@ -445,7 +445,7 @@ Home
                         @endphp
                     </div>
                     @endif
-                    
+
                     <!--Grid row-->
                     <div class="row">
                         <!--Grid column-->
@@ -486,12 +486,13 @@ Home
                         </div>
                     </div>
                     <!--Grid row-->
+                    <div class="text-center text-md-left mt-4">
+                        {{-- <a class="btn btn-search btn-lg btn-block text-light">Send</a> --}}
+                        <button type="submit" class="btn btn-search btn-lg btn-block text-light">Send</button>
+                    </div>
                 </form>
 
-                <div class="text-center text-md-left mt-4">
-                    <a class="btn btn-search btn-lg btn-block text-light">Send</a>
-                </div>
-                <div class="status"></div>
+
             </div>
             <!--Grid column-->
         </div>
