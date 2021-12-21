@@ -424,19 +424,10 @@ Home
 
             <!--Grid column-->
             <div class="col-md-4 mb-md-0 mb-5 mt-4">
-                <form id="contact-form" name="contact-form" action="" method="POST">
-
-                    <!--Grid row-->
-                    {{-- <div class="row"> --}}
-
-                    <!--Grid column-->
-
-                    {{-- </div> --}}
-                    <!--Grid row-->
-
+                <form id="contact-form" name="contact-form" action="/contact-form" method="POST">
+                    @csrf
                     <!--Grid row-->
                     <div class="row">
-
                         <!--Grid column-->
                         <div class="col-md-12">
                             <div class="md-form mb-0">
@@ -445,7 +436,6 @@ Home
                             </div>
                         </div>
                         <!--Grid column-->
-
                         <!--Grid column-->
                         <div class="col-md-12 mt-2">
                             <div class="md-form mb-0">
@@ -463,23 +453,18 @@ Home
                         </div>
                     </div>
                     <!--Grid row-->
-
                     <!--Grid row-->
                     <div class="row">
-
                         <!--Grid column-->
                         <div class="col-md-12 mt-2">
-
                             <div class="md-form">
                                 <label for="message">Your message</label>
                                 <textarea type="text" id="message" name="message" rows="2"
                                     class="form-control md-textarea"></textarea>
                             </div>
-
                         </div>
                     </div>
                     <!--Grid row-->
-
                 </form>
 
                 <div class="text-center text-md-left mt-4">
@@ -488,34 +473,10 @@ Home
                 <div class="status"></div>
             </div>
             <!--Grid column-->
-
-            <!--Grid column-->
-            {{-- <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
-        </div> --}}
-            <!--Grid column-->
-
         </div>
     </div>
-
-
-
-
 </section>
 <!--Section: Contact v.2-->
-
 {{-- contact us section end here --}}
 
 
