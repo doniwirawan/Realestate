@@ -45,12 +45,12 @@ Investment Guide
       <div class="row">
         <div class="col-md-6 p-5">
           <img class="w-100" src="{{url('./frontend/img/ebookeng.jpg')}}" alt="emasestate ebook english version">
-          <a href="" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in English</a>
+          <a href="{{url('./storage/E-BOOK_ENG.pdf')}}" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in English</a>
         </div>
         
         <div class="col-md-6 p-5 mt-md-5 mt-lg-0">
           <img class="w-100" src="{{url('./frontend/img/ebookfr.jpg')}}" alt="emasestate ebook france version">
-          <a href="" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in France</a>
+          <a href="{{url('./storage/E-BOOK_FR.pdf')}}" class="btn btn-primary btn-lg btn-block mt-4" download>Download Ebook in France</a>
         </div>
       </div>
     </div>
