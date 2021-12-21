@@ -7,10 +7,10 @@
                     <div class="w-header-a">
                         {{-- <div class="row"> --}}
 
-                            {{-- <h3 class="w-title-a navbar-brand text-brand">
+                        {{-- <h3 class="w-title-a navbar-brand text-brand">
                                 <img src="{{url('./frontend/img/favicon.png')}}" alt="">
-                            </h3> --}}
-                            <h3 class="w-title-a text-brand">Emas<span class="color-b"> Estate</span></h3>
+                        </h3> --}}
+                        <h3 class="w-title-a text-brand">Emas<span class="color-b"> Estate</span></h3>
                         {{-- </div> --}}
                     </div>
                     <div class="w-body-a">
@@ -60,11 +60,18 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="container">
-                    <form method="POST" action="/newsletter">
+
+                    <form method="POST" action="{{ route('subscribers.store') }}">
+                        @csrf
+                        @if (session('subscribed'))
+                        <div class="alert alert-success">
+                            {{ session('subscribed') }}
+                        </div>
+                        @endif
                         <div class="form-group col-12 ">
                             <label for="" class="font-weight-bold color-b">Subscribe to our newsletter</label>
                             <div class="d-flex flex-row">
-                                <input type="email" class="form-control" placeholder="your@email.com">
+                                <input type="email" class="form-control" placeholder="your@email.com" name="email">
                                 <button type="submit" class="btn btn-search text-white">Subscribe</button>
                             </div>
 

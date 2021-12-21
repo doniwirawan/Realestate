@@ -21,6 +21,8 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/',[HomeController::class, 'index'])->name('index');
 
+Route::get('/home',[HomeController::class, 'index'])->name('index');
+
 Route::get('/land',[HomeController::class, 'land'])->name('land');
 
 Route::get('/investment-guide',[HomeController::class, 'invest'])->name('invest');
@@ -33,6 +35,10 @@ Route::get('/about',[HomeController::class, 'about'])->name('about');
 Route::get('/realestate/{slug}',[HomeController::class, 'single'])->name('realestateDetail');
 
 Route::get('/search',[HomeController::class, 'search'])->name('realestateSearch');
+
+Route::post('/search-form',[HomeController::class, 'searchForm'])->name('realestateSearchForm');
+
+
 
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 

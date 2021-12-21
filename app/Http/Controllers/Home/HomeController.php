@@ -174,4 +174,22 @@ class HomeController extends Controller
 
         return view('pages.realestate')->with(['realestate' => $realestate]);
     }
+
+    public function searchForm(Request $request)
+    {
+        // $searchQuery = $request->name;
+        $type = $request->type;
+        $status = $request->status;
+        $price = $request->price;
+
+
+        $realestate = DB::table('realestate')
+        ->where('type', 'like', "%" . $type . "%")
+        ->where('status', 'like', "%" . $status . "%")
+        ->where('price_usd', '<=', $price)
+        ->paginate(12);
+        
+
+        return view('pages.realestate')->with(['realestate' => $realestate]);
+    }
 }

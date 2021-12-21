@@ -5,34 +5,35 @@ Real Estate
 @section('content')
 
 {{-- search box --}}
-    <div class="search-box position-relative text-light">
+    <div class="search-box search-box-realestate position-relative text-light mt-5">
         <div class="container">
-            <form method="POST" action="/search">
-                <div class=" d-flex flex-row justify-content-around p-5">
-                    <div class="form-group col-3">
+            <form method="POST" action="/search-form">
+                {{ @csrf_field() }}
+                <div class="col-12 row justify-content-around p-5">
+                    <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Type</label>
-                        <select class="custom-select" id="">
+                        <select class="custom-select" id="" name="type">
                             <option selected>Choose...</option>
                             <option value="land">Land</option>
                             <option value="villa">Villa</option>
                             <option value="hotel">Hotel</option>
                         </select>
                     </div>
-                    <div class="form-group col-3">
+                    <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Status</label>
-                        <select class="custom-select" id="">
+                        <select class="custom-select" id="" name="status">
                             <option selected>Choose...</option>
                             <option value="freehold">Freehold</option>
                             <option value="leasehold">Leasehold</option>
                         </select>
                     </div>
-                    <div class="form-group col-3">
+                    <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Price</label>
                         <br>
-                        <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range">
+                        <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range" name="price">
                         <span id="input-range-output" class="input-range-output">0</span>
                     </div>
-                    <div class="form-group col-3 pt-2">
+                    <div class="form-group col-lg-3 col-md-12 pt-2">
                         <button type="submit" class="btn btn-search text-light mt-4"><i class="fas fa-search pr-2"></i>
                             Search</button>
                     </div>

@@ -2140,3 +2140,11 @@ label{
 .btn-primary{
   background-color: #1F6F8B;
 }
+
+.search-box-realestate{
+  margin-top: 90px !important;
+}
+
+body{
+  overflow-x: hidden !important;
+}
