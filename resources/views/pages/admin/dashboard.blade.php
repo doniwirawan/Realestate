@@ -35,7 +35,7 @@
                 <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success" id="sold">mark as sold</button></form>
                 @else
                     <p class="bg-success text-center text-light rounded">SOLD</p>
-                    <form method="GET" action="/realestate/unsold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success" id="sold">mark as unsold</button></form>
+                    <form method="GET" action="/realestate/unsold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-danger" id="sold">mark as unsold</button></form>
                 @endif
 
             </td>
