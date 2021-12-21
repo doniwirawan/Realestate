@@ -112,10 +112,10 @@ About
                             <p class="content-d color-text-a text-white">
                                 Pierre-Alain Masnada studied Business in the USA before running companies in the
                                 yachting space for 10 years.
-
+                                <br><br>
                                 For the last 5 years, he has specialized in materializing unique real estate projects in
                                 Bali and its surrounding islands, representing more than 13+ million USD.
-
+                                <br><br>
                                 Main skills: Properties due diligence - Land and villas sourcing - Construction.
                             </p>
                             <div class="info-agents color-a">
@@ -181,14 +181,14 @@ About
                         <div class="card-body-d">
                             <p class="content-d color-text-a text-white">
                                 “Sail away from the safe harbor. Explore. Dream. Discover.”
-
+                                <br><br>
                                 Matthieu is a French serial entrepreneur living in Bali. He is passionate about surfing
                                 and about connecting people to create meaningful and sustainable relationships and
                                 projects.
-
+                                <br><br>
                                 He holds an MBA from INSEAD, voted best MBA in the world in 2021, and previously worked
                                 for 8 years for AccorHotels in finance, development, and operations.
-
+                                <br><br>
                                 Main skills: Financial analysis and modeling – Projects development – Legal and
                                 compliance.
                             </p>
