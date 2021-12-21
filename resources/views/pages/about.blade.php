@@ -103,7 +103,7 @@ About
                         <div class="card-header-d">
                             <div class="card-title-d align-self-center">
                                 <h3 class="title-d">
-                                    <a href="agent-single.html" class="link-two">Pierre Masnada
+                                    <a href="#" class="link-two">Pierre Masnada
                                     </a>
                                 </h3>
                             </div>
@@ -150,12 +150,12 @@ About
                                     </li> --}}
                                     <li class="list-inline-item">
                                         <a href="#" class="link-one">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            <i class="fa fa-linkedin text-white" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a href="#" class="link-one">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <i class="fa fa-envelope text-white" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -174,7 +174,7 @@ About
                         <div class="card-header-d">
                             <div class="card-title-d align-self-center">
                                 <h3 class="title-d">
-                                    <a href="agent-single.html" class="link-two">Matthieu Chauveau </a>
+                                    <a href="#" class="link-two">Matthieu Chauveau </a>
                                 </h3>
                             </div>
                         </div>
@@ -229,12 +229,12 @@ About
                                     </li> --}}
                                     <li class="list-inline-item">
                                         <a href="#" class="link-one">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            <i class="fa fa-linkedin text-white" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a href="#" class="link-one">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <i class="fa fa-envelope text-white" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                 </ul>
