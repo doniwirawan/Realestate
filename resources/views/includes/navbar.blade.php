@@ -1,7 +1,7 @@
  <!--/ Nav Star /-->
  <a href="https://wa.me/6282146333864" target="_blank" rel="noopener noreferrer"
      class="whatsapp-button text-center d-flex align-items-center justify-content-center">
-     <i class="fa fa-whatsapp fa-3x"></i>
+     <i class="fa fa-whatsapp fa-3x text-white"></i>
  </a>
  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
      <div class="container">
