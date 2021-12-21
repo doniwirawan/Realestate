@@ -7,6 +7,8 @@ use Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
+
 
 
 class AdminController extends Controller
@@ -103,11 +105,22 @@ class AdminController extends Controller
         }
 
         if ($request->file('file')) {
-            $filex = $request->file('file');
+            // $filex = $request->file('file');
 
-            $imageName = $filex->getClientOriginalName();
+            $imageName = $request->file('file')->getClientOriginalName();
 
-            $filex->move(public_path('storage/img'), $imageName);
+            // $path = '/storage/img/'. $imageName;
+            $path = public_path('storage\img\\' . $imageName);
+
+            // dd($path);
+
+            // if (!file_exists($path)) {
+            //     mkdir($path, 666, true);
+            // }
+
+            Image::make($request->file('file'))->resize(1920, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($path);
 
             DB::table('realestate')->where('id', $request->id)->update([
                 'img' => $imageName,
@@ -179,11 +192,39 @@ class AdminController extends Controller
 
         if($request->file('file')){
 
-            $file = $request->file('file');
+            // $file = $request->file('file');
 
-            $imageName = $file->getClientOriginalName();
+            // $file = Image::make($request->file('file'))->resize(1920, null, function ($constraint) {
+            //     $constraint->aspectRatio();
+            // });
 
-            $file->move(public_path('storage/img'), $imageName);
+            $imageName = $request->file('file')->getClientOriginalName();
+            
+            // $path = '/storage/img/'. $imageName;
+            $path = public_path('storage\img\\' . $imageName);
+
+            // dd($path);
+
+            // if (!file_exists($path)) {
+            //     mkdir($path, 666, true);
+            // }
+
+            Image::make($request->file('file'))->resize(1920, null, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($path);
+
+            // Image::make($request->file('file'))->resize(1920, null, function ($constraint) {
+            //     $constraint->aspectRatio();
+            // })->move(public_path('storage/img'), $imageName);
+
+            // Image::make($request->file('file'))->resize(1920, null, function ($constraint) {
+            //     $constraint->aspectRatio();
+            // })->save(public_path('storage/img'), $imageName);
+
+
+            // $imageName = $file->getClientOriginalName();
+
+            // $file->move(public_path('storage/img'), $imageName);
 
             DB::table('realestate')->insert([
                 'img' => $imageName,
