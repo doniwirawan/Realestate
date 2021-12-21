@@ -64,6 +64,15 @@ class AdminController extends Controller
         return redirect('/admin');
     }
 
+    public function unsold($id)
+    {
+        DB::table('realestate')->where('id', $id)->update([
+            'sold' => 0,
+        ]);
+
+        return redirect('/admin');
+    }
+
     public function update(Request $request)
     {
          $rules = [

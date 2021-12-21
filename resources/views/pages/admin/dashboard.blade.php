@@ -35,9 +35,11 @@
                 <form method="GET" action="/realestate/sold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success" id="sold">mark as sold</button></form>
                 @else
                     <p class="bg-success text-center text-light rounded">SOLD</p>
+                    <form method="GET" action="/realestate/unsold/{{$realestate->id}}"  class="m-1"><button type="submit" class="btn btn-outline-success" id="sold">mark as unsold</button></form>
                 @endif
+
             </td>
-           
+            
             <td>
                 <form method="GET" action="/realestate/edit/{{$realestate->id}}"  class="m-1" name="myForm"><button type="submit" class="btn btn-primary" id="edit">Edit</button></form>
 
