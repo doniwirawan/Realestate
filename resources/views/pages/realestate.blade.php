@@ -7,12 +7,12 @@ Real Estate
 {{-- search box --}}
     <div class="search-box search-box-realestate position-relative text-light mt-5">
         <div class="container">
-            <form method="POST" action="/search-form">
+            <form method="POST" action="/search-form" class="">
                 {{ @csrf_field() }}
                 <div class="col-12 row justify-content-around p-5">
                     <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Type</label>
-                        <select class="custom-select" id="" name="type">
+                        <select class="form-control form-control-lg form-control-a" id="" name="type">
                             <option selected>Choose...</option>
                             <option value="land">Land</option>
                             <option value="villa">Villa</option>
@@ -21,7 +21,7 @@ Real Estate
                     </div>
                     <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Status</label>
-                        <select class="custom-select" id="" name="status">
+                        <select class="form-control form-control-lg form-control-a" id="" name="status">
                             <option selected>Choose...</option>
                             <option value="freehold">Freehold</option>
                             <option value="leasehold">Leasehold</option>
