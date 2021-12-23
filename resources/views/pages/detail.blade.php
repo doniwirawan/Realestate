@@ -185,9 +185,6 @@
 <!--/ Property Single End /-->
 @endforeach
 
-@include('includes.maps')
-
-
 <!--/ Property Star /-->
 <section class="section-property section-t8">
     <div class="container">
@@ -276,6 +273,13 @@
         </div>
 </section>
 <!--/ Property End /-->
+
+
+
+@include('includes.maps')
+
+
+
 
 
 
