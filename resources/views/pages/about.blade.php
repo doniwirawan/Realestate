@@ -249,4 +249,44 @@ About
 <!--/ Team End /-->
 
 
+<!--/ Property Star /-->
+{{-- <section class="section-property section-t8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-wrap d-flex justify-content-between">
+                    <div class="title-box">
+                        <h2 class="title-a">Our Partners</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="property-carousel" class="owl-carousel owl-theme">
+            <div class="carousel-item-b">
+                <div class="img-box-a">
+                    <img src="{{url('./frontend/img/botanik.png')}}" class="img-a img-fluid w-100">
+                </div>
+            </div>
+            <div class="carousel-item-b ">
+                <div class="img-box-a">
+                    <img src="{{url('./frontend/img/tropic-invest.png')}}" class="img-a img-fluid w-100">
+                </div>
+            </div>
+            <div class="carousel-item-b ">
+                <div class="img-box-a">
+                    <img src="{{url('./frontend/img/logo-color.png')}}" class="img-a img-fluid w-100">
+                </div>
+            </div>
+            <div class="carousel-item-b ">
+                <div class="img-box-a">
+                    <img src="{{url('./frontend/img/baliexception.png')}}" class="img-a img-fluid w-100">
+                </div>
+            </div>
+        </div>
+</section> --}}
+<!--/ Property End /-->
+
+
+
+
 @endsection

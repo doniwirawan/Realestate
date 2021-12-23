@@ -40,7 +40,7 @@
                     </div>
                     <div class="w-body-a">
                         <div class="w-body-a">
-                            <ul class="list-unstyled ">
+                            {{-- <ul class="list-unstyled ">
                                 <li class="item-list-a">
                                     <i class="fa fa-angle-right"></i> <a href="#">Site Map</a>
                                 </li>
@@ -53,7 +53,7 @@
                                 <li class="item-list-a">
                                     <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
                                 </li>
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
