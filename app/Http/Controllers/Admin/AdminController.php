@@ -50,6 +50,20 @@ class AdminController extends Controller
         return redirect('/admin');
     }
 
+    public function contactDelete($id)
+    {
+        $contact = DB::table('contact_form')->where('id', $id)->delete();
+
+        return redirect('/contact-form-data');
+    }
+
+    public function emailDelete($id)
+    {
+        $contact = DB::table('subscribers')->where('id', $id)->delete();
+
+        return redirect('/emailing-list');
+    }
+
     public function edit($id)
     {
         $realestate = DB::table('realestate')->where('id', $id)->get();

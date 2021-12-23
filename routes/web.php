@@ -78,6 +78,10 @@ Route::get('/realestate/edit/{id}', [AdminController::class, 'edit'])->name('edi
 
 Route::get('/realestate/delete/{id}', [AdminController::class, 'delete'])->name('delete');
 
+Route::get('/contact/delete/{id}', [AdminController::class, 'contactDelete'])->name('contactDelete');
+
+Route::get('/email/delete/{id}', [AdminController::class, 'emailDelete'])->name('emailDelete');
+
 Route::get('/realestate/sold/{id}', [AdminController::class, 'sold'])->name('sold');
 
 Route::get('/realestate/unsold/{id}', [AdminController::class, 'unsold'])->name('unsold');

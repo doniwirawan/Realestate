@@ -1,9 +1,9 @@
 @extends('layouts.admin.dashboard')
 @section('title')
-    Email
+    Contact Form
 @endsection
 @section('content')
-<h1 class="fw-bold">Email Subscribers</h1>
+<h1 class="fw-bold">Contact Form</h1>
 <table class="table table-striped" id="myTable">
     <thead>
         <tr>
@@ -36,8 +36,7 @@
             {{-- </td> --}}
             
             <td>
-                <a href="mailto:{{$contact->email}}"  class="btn btn-success" target="_blank" rel="noopener noreferrer">Send Email</a>
-                <form method="GET" action="/contact/edit/{{$contact->id}}"  class="m-1" name="myForm"><button type="submit" class="btn btn-primary" id="edit">Edit</button></form>
+                <a href="mailto:{{$contact->email}}"  class="btn btn-primary" target="_blank" rel="noopener noreferrer">Send Email</a>
 
                  <form method="GET" action="/contact/delete/{{$contact->id}}" class="m-1" name="myForm"><button type="submit" class="btn btn-danger" id="delete">Delete</button></form>
             </td>
