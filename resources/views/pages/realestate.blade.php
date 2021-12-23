@@ -30,7 +30,7 @@ Real Estate
                     <div class="form-group col-lg-3 col-md-12">
                         <label for="" class="font-weight-bold">Price</label>
                         <br>
-                        <input type="range" class="col-12 mt-3" min="0" max="999999999999" id="input-range" name="price">
+                        <input type="range" class="col-12 mt-3" min="0" max="9999999999" id="input-range" name="price">
                         <span id="input-range-output" class="input-range-output">0</span>
                     </div>
                     <div class="form-group col-lg-3 col-md-12 pt-2">
