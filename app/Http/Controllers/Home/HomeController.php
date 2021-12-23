@@ -143,7 +143,18 @@ class HomeController extends Controller
     {
         $single = DB::table('realestate')->where('slug', $slug)->get();
 
-        return view('pages.detail')->with(['single' => $single]);
+        $maps = DB::table('realestate')->where('slug', $slug)->get();
+
+        $realestate = DB::table('realestate')->orderBy('id', 'desc')->take(5)->get();
+
+
+        // dd($realestate);
+
+        return view('pages.detail')->with([
+            'realestate' => $realestate, 
+            'single' => $single, 
+            'maps' => $maps,
+        ]);
     }
 
     public function contact()

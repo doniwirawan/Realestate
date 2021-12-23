@@ -84,7 +84,7 @@ Admin Dashboard
         <input type="text" class="form-control" name="location" placeholder="-8.5947,115.1974" id="location_1" required>
         <label for="price">Price</label>
         <input type="number" class="form-control" name="price_usd" placeholder="Price in IDR" id="price" required>
-        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        <button type="submit" class="btn btn-primary mt-2 btn-lg btn-block">Submit</button>
     </form>
 </div>
 @endsection
