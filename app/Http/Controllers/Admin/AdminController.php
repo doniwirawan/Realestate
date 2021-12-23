@@ -64,6 +64,13 @@ class AdminController extends Controller
         return view('pages.admin.email', ['emails' => $emails]);
     }
 
+    public function contactFormData()
+    {
+        $contacts = DB::table('contact_form')->get();
+
+        return view('pages.admin.contact', ['contacts' => $contacts]);
+    }
+
     public function sold($id)
     {
         DB::table('realestate')->where('id', $id)->update([

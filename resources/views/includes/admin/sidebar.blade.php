@@ -6,6 +6,8 @@
                     
                     <a href="/emailing-list" class="nav_link {{ Request::is('emailing-list') ? 'active' : '' }}"> <i class='bx bxs-envelope'></i><span class="nav_name">Email List</span> </a>
 
+                    <a href="/contact-form-data" class="nav_link {{ Request::is('contact-form-data') ? 'active' : '' }}"> <i class='bx bxs-contact'></i><span class="nav_name">Contact Form</span> </a>
+
 
                     <a href="/input" class="nav_link {{ Request::is('input') ? 'active' : '' }}"> <i class='bx bxs-pencil'></i><span class="nav_name">Input Data</span> </a>
                 </div>

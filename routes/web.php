@@ -66,6 +66,8 @@ Route::get('/admin', [AdminController::class, 'admin'])->name('adminDashboard');
 
 Route::get('/emailing-list', [AdminController::class, 'email'])->name('emailDashboard');
 
+Route::get('/contact-form-data', [AdminController::class, 'contactFormData'])->name('contactFormData');
+
 Route::get('/input', [AdminController::class, 'input'])->name('inputDashboard');
 
 Route::post('/add', [AdminController::class, 'add'])->name('add');
