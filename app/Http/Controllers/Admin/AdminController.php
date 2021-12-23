@@ -57,6 +57,13 @@ class AdminController extends Controller
         return view('pages.admin.edit', ['realestate' => $realestate]);
     }
 
+    public function email()
+    {
+        $emails = DB::table('subscribers')->get();
+
+        return view('pages.admin.email', ['emails' => $emails]);
+    }
+
     public function sold($id)
     {
         DB::table('realestate')->where('id', $id)->update([

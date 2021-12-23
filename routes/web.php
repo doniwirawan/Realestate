@@ -64,6 +64,8 @@ Auth::routes();
 // admin here
 Route::get('/admin', [AdminController::class, 'admin'])->name('adminDashboard');
 
+Route::get('/emailing-list', [AdminController::class, 'email'])->name('emailDashboard');
+
 Route::get('/input', [AdminController::class, 'input'])->name('inputDashboard');
 
 Route::post('/add', [AdminController::class, 'add'])->name('add');
